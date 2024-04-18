@@ -5,7 +5,7 @@
     </div>
 
     <div class="bottom">
-      <svg 
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
@@ -60,7 +60,6 @@
         ></path>
       </svg>
 
-    
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
@@ -104,7 +103,6 @@
         ></path>
       </svg>
 
-   
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
@@ -258,16 +256,36 @@
   color: #271b7e;
   font-weight: bold;
 }
-.bottom{
-    margin-top: 50px;
+.bottom {
+  margin-top: 50px;
 }
 
-.bottom svg{
-    margin: 10px;
-    transition: all 0.3s ease;
+.bottom svg {
+  margin: 10px;
+  transition: all 0.3s ease;
 }
 
-.bottom svg:hover{
-    transform: scale(1.2);
+.bottom svg:hover {
+  transform: scale(1.2);
+}
+
+/* ---------------------------------------ESTILOS PARA CELULAR---------------------------------------- */
+@media screen and (max-width: 768px) {
+  .top h1 {
+    color: #271b7e;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+
+  .bottom svg {
+    margin: 0 auto;
+  }
 }
 </style>

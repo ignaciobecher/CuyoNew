@@ -15,7 +15,6 @@
   </a>
 </template>
 
-
 <style scoped>
 .header-container {
   background-color: #2a0878;
@@ -44,15 +43,15 @@
 }
 
 .text-div h1 {
-  color:  #0cc39b ;
+  color: #0cc39b;
   font-weight: bold;
   font-size: 80px;
 }
 
 .text-div button {
   border: none;
-  background-color:#0cc39b;
-  color:#2a0878;
+  background-color: #0cc39b;
+  color: #2a0878;
   padding: 20px;
   font-weight: bold;
   font-size: 20px;
@@ -62,7 +61,6 @@
 
 .text-div button:hover {
   font-size: 22px;
-
 }
 
 .float {
@@ -82,5 +80,29 @@
 
 .my-float {
   margin-top: 16px;
+}
+
+/* ---------------------------------------ESTILOS PARA CELULAR---------------------------------------- */
+@media screen and (max-width: 768px) {
+  .img-div img {
+    width: 50%;
+  }
+
+  .text-div h1 {
+    color: #0cc39b;
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .text-div button {
+    border: none;
+    background-color: #0cc39b;
+    color: #2a0878;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out; /* Transición suave */
+  }
 }
 </style>

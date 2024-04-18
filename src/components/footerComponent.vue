@@ -213,7 +213,7 @@
     padding-top: 50px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #54559e;
+    background-color: #271b7e;
     row-gap: 30px;
   }
 

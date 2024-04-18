@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="btn-container">
-      <button><i class="bi bi-telephone"></i> Agendar llamada </button>
+      <button><i class="bi bi-telephone"></i> Agendar llamada</button>
     </div>
   </div>
 </template>
@@ -118,5 +118,56 @@
 
 .btn-container button:hover {
   font-size: 28px;
+}
+
+/* ---------------------------------------ESTILOS PARA CELULAR---------------------------------------- */
+@media screen and (max-width: 768px) {
+  
+
+  .title-div h1 {
+    color: #243984;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .title-div p {
+    color: #243984;
+    font-weight: 500;
+  }
+
+  .services-div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 30px;
+  text-align: center;
+  color: #040404;
+}
+
+.service {
+  border-right: none;
+  border-left: none;
+}
+
+
+
+.services-div .service h3 {
+  font-weight: bold;
+}
+
+.service p {
+  font-weight: 500;
+}
+
+.btn-container button {
+  border: none;
+  background-color: #2a0878;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
 }
 </style>

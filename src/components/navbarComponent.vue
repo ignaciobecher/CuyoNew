@@ -44,8 +44,8 @@
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
-            <span  style="margin-right: 5px;" class="fi fi-us flag"></span> 
-            <span class="fi fi-ar flag"></span> 
+            <!-- <span style="margin-right: 5px" class="fi fi-us flag"></span> -->
+            <span class="fi fi-ar flag"></span>
             <li class="nav-item icon-link">
               <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
             </li>
@@ -65,6 +65,10 @@
 <style scoped>
 .navbar {
   background-color: #040505 !important;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
 }
 
 .navbar a {
@@ -99,24 +103,34 @@ img {
   }
 
   .icon-link i {
-  font-size: 20px; /* Tamaño inicial del icono */
-  color: white; /* Color inicial del icono */
-  transition: all 0.3s ease-in-out; /* Transición suave */
-}
-.icon-link:hover i {
-  font-size: 24px; /* Tamaño aumentado del icono */
-  color: #129f95; /* Color verde */
+    font-size: 20px; /* Tamaño inicial del icono */
+    color: white; /* Color inicial del icono */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+  }
+  .icon-link:hover i {
+    font-size: 24px; /* Tamaño aumentado del icono */
+    color: #129f95; /* Color verde */
+  }
+
+  .flag {
+    font-size: 15px; /* Tamaño inicial del icono */
+    color: white; /* Color inicial del icono */
+    transition: all 0.3s ease-in-out; /* Transición suave */
+    cursor: pointer;
+  }
+  .flag:hover {
+    font-size: 20px; /* Tamaño aumentado del icono */
+    color: #129f95; /* Color verde */
+  }
 }
 
-.flag {
-  font-size: 15px; /* Tamaño inicial del icono */
-  color: white; /* Color inicial del icono */
-  transition: all 0.3s ease-in-out; /* Transición suave */
-  cursor: pointer;
-}
-.flag:hover  {
-  font-size: 20px; /* Tamaño aumentado del icono */
-  color: #129f95; /* Color verde */
-}
+/* ------------------------------ESTILOS PARA CELULAR------------------------------- */
+@media screen and (max-width: 768px) {
+  img {
+    width: 25%;
+  }
+  .navbar-toggler{
+    background-color:#129f95;
+  }
 }
 </style>

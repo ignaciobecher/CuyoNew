@@ -83,4 +83,57 @@ button {
   background-color:  #c383f1 ;
   color: black;
 }
+
+
+/* ---------------------------------------ESTILOS PARA CELULAR---------------------------------------- */
+@media screen and (max-width: 768px){
+  .adminia-container{
+  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #0cc39b;
+  padding-bottom: 70px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  background-color: #732e8d;
+  border-radius: 10px;
+}
+
+
+.left h1 {
+  font-size: 35px;
+}
+
+.right{
+  text-align: center;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.right img{
+  width: 20%;
+}
+
+.left p {
+  font-weight: 400;
+}
+
+.spanAdm {
+  font-weight: bold;
+  color: black;
+}
+
+button {
+  border: none;
+  background-color: #ba4be2;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 3px;
+}
+}
 </style>

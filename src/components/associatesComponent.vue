@@ -21,7 +21,7 @@ export default {};
 .associates-container {
   text-align: center;
   padding-top: 50px;
-  background-color: #0cc39b ;
+  background-color: #0cc39b;
 }
 
 .associates-container img {
@@ -31,5 +31,22 @@ export default {};
 
 .associates-container img:hover {
   transform: scale(1.2);
+}
+
+/* ---------------------------------------ESTILOS PARA CELULAR---------------------------------------- */
+@media screen and (max-width: 768px) {
+  .associates-container {
+    text-align: center;
+    padding-top: 50px;
+    background-color: #0cc39b;
+  }
+
+  .associates-container h5{
+    font-size: 25px;
+  }
+
+  .associates-container img {
+    width: 23%;
+  }
 }
 </style>
