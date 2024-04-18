@@ -10,11 +10,16 @@
           administrar tu negocio desde donde sea, con metricas en vivo, asistido
           por inteligencia artificial.
         </p>
-        <button>Probar Adminiad gratis</button>
+        <button><a
+          style="text-decoration: none; color: white"
+          target="_blank"
+          href="https://adminiad.com/"
+          >PROBA ADMINIA GRATIS</a
+        ></button>
       </div>
 
       <div class="right">
-        <a href="https://adminiad.com/">
+        <a target="_blank" href="https://adminiad.com/">
           <img src="../assets/adminiaBlanco.png" alt="" />
         </a>
       </div>

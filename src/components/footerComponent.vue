@@ -2,22 +2,28 @@
   <div class="pcDiv">
     <div class="main">
       <div class="left">
-        <p class="underline">INICIO</p>
-
-        <p class="underline">NOSOTROS</p>
-
-        <p class="underline">SERVICIOS</p>
-        <p class="underline">SISTEMAS</p>
-        <p class="underline">CURSOS</p>
-        <p class="underline">CONTACTO</p>
-
+        <p class="underline">
+          <router-link class="routerClass" to="">INICIO</router-link>
+        </p>
+        <p class="underline">
+          <router-link class="routerClass" to="/nosotros">NOSOTROS</router-link>
+        </p>
+        <p class="underline">
+          <router-link class="routerClass" to="/servicios">SERVICIOS</router-link>
+        </p>
+        <p class="underline">
+          <router-link class="routerClass" to="/sistemas">SISTEMAS</router-link>
+        </p>
+        <!-- <p class="underline">CURSOS</p> -->
+        <p class="underline">
+          <a class="routerClass" target="_blank" href="https://wa.link/212bz3">CONTACTO</a>
+        </p>
       </div>
       <div class="center">
         <h6>Dirección</h6>
         <p>Villa Mercedes</p>
         <p>San Luis</p>
         <p>Argentina</p>
-       
       </div>
       <div class="right">
         <h6>Contacto</h6>
@@ -26,33 +32,39 @@
       </div>
       <div class="social">
         <h6>Seguinos en nuestras redes</h6>
-        <a href=""><i class="bi bi-instagram"></i>Instagram</a>
-        <a href=""><i class="bi bi-facebook"></i>Facebook</a>
-        <a href=""><i class="bi bi-whatsapp"></i>WhatsApp</a>
+        <a class="routerClass" href="https://www.instagram.com/cuyocode/"><i class="bi bi-instagram"></i>Instagram</a>
+        <a class="routerClass" href="https://www.facebook.com/people/CuyoCode/100092369985447/"><i class="bi bi-facebook"></i>Facebook</a>
+        <a class="routerClass" href="https://wa.link/212bz3"><i class="bi bi-whatsapp"></i>WhatsApp</a>
       </div>
-      <p style="color: white">©CuyoCode.  Todos los derechos reservados.</p>
+      <p style="color: white">©CuyoCode. Todos los derechos reservados.</p>
     </div>
   </div>
 
   <div class="divMobile">
     <div class="main">
       <div class="left">
-        <p class="underline">INICIO</p>
-
-        <p class="underline">NOSOTROS</p>
-
-        <p class="underline">SERVICIOS</p>
-        <p class="underline">SISTEMAS</p>
-        <p class="underline">CURSOS</p>
-        <p class="underline">CONTACTO</p>
-
+        <p class="underline">
+          <router-link class="routerClass" to="">INICIO</router-link>
+        </p>
+        <p class="underline">
+          <router-link class="routerClass" to="/nosotros">NOSOTROS</router-link>
+        </p>
+        <p class="underline">
+          <router-link class="routerClass" to="/servicios">SERVICIOS</router-link>
+        </p>
+        <p class="underline">
+          <router-link class="routerClass" to="/sistemas">SISTEMAS</router-link>
+        </p>
+        <!-- <p class="underline">CURSOS</p> -->
+        <p class="underline">
+          <a class="routerClass" target="_blank" href="https://wa.link/212bz3">CONTACTO</a>
+        </p>
       </div>
       <div class="center">
         <h6>Dirección</h6>
         <p>Villa Mercedes</p>
         <p>San Luis</p>
         <p>Argentina</p>
-       
       </div>
       <div class="right">
         <h6>Contacto</h6>
@@ -61,16 +73,21 @@
       </div>
       <div class="social">
         <h6>Seguinos en nuestras redes</h6>
-        <a href=""><i class="bi bi-instagram"></i>Instagram</a>
-        <a href=""><i class="bi bi-facebook"></i>Facebook</a>
-        <a href=""><i class="bi bi-whatsapp"></i>WhatsApp</a>
+        <a class="routerClass" href="https://www.instagram.com/cuyocode/"><i class="bi bi-instagram"></i>Instagram</a>
+        <a class="routerClass" href="https://www.facebook.com/people/CuyoCode/100092369985447/"><i class="bi bi-facebook"></i>Facebook</a>
+        <a class="routerClass" href="https://wa.link/212bz3"><i class="bi bi-whatsapp"></i>WhatsApp</a>
       </div>
-      <p style="color: white">©CuyoCode.  Todos los derechos reservados.</p>
+      <p style="color: white">©CuyoCode. Todos los derechos reservados.</p>
     </div>
   </div>
 </template>
 
 <style scoped>
+
+.routerClass{
+  text-decoration: none;
+  color: white;
+}
 /******************************** ESTILOS PARA PANTALLA ****************************************/
 @media (min-width: 768px) {
   .pcDiv {

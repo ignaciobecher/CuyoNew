@@ -7,10 +7,17 @@
     <div class="text-div">
       <h1>CREAMOS</h1>
       <h1>SOLUCIONES</h1>
-      <button>AGENDA UNA LLAMADA</button>
+      <button>
+        <a
+          style="text-decoration: none; color: #2a0878"
+          target="_blank"
+          href="https://wa.link/212bz3"
+          >AGENDA UNA LLAMADA</a
+        >
+      </button>
     </div>
   </div>
-  <a href="https://wa.link/gx2foq" class="float" target="_blank">
+  <a href="https://wa.link/212bz3" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
   </a>
 </template>

@@ -18,42 +18,46 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link underline" aria-current="page" href="#"
-                >INICIO</a
-              >
+              <a class="nav-link underline" aria-current="page" href="#">
+                <router-link class="routerClass" to="/">INICIO</router-link>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link underline" aria-current="page" href="#"
-                >NOSOTROS</a
-              >
+              <a class="nav-link underline" aria-current="page" href="#">
+                <router-link class="routerClass" to="/nosotros">NOSOTROS</router-link>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link underline" href="#">SERVICIOS</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link underline" href="#">SISTEMAS</a>
+              <a class="nav-link underline" href="#">
+                <router-link class="routerClass" to="/servicios">SERVICIOS</router-link>
+              </a>
             </li>
 
             <li class="nav-item">
+              <a class="nav-link underline" href="#">
+                <router-link class="routerClass" to="/sistemas">SISTEMAS</router-link>
+              </a>
+            </li>
+
+            <!-- <li class="nav-item">
               <a class="nav-link underline" href="#">CURSOS</a>
-            </li>
+            </li> -->
 
             <li class="nav-item">
-              <a class="nav-link underline" href="#">CONTACTO</a>
+              <a class="nav-link underline" target="_blank" href="https://wa.link/212bz3">CONTACTO</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
             <!-- <span style="margin-right: 5px" class="fi fi-us flag"></span> -->
             <span class="fi fi-ar flag"></span>
             <li class="nav-item icon-link">
-              <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="nav-link" target="_blank" href="https://www.facebook.com/people/CuyoCode/100092369985447/"><i class="bi bi-facebook"></i></a>
             </li>
             <li class="nav-item icon-link">
-              <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+              <a class="nav-link" target="_blank" href="https://www.instagram.com/cuyocode/"><i class="bi bi-instagram"></i></a>
             </li>
             <li class="nav-item icon-link">
-              <a class="nav-link" href="#"><i class="bi bi-whatsapp"></i></a>
+              <a class="nav-link" target="_blank" href="https://wa.link/212bz3"><i class="bi bi-whatsapp"></i></a>
             </li>
           </ul>
         </div>
@@ -63,6 +67,11 @@
 </template>
 
 <style scoped>
+
+.routerClass{
+  text-decoration: none;
+}
+
 .navbar {
   background-color: #040505 !important;
 }
@@ -129,8 +138,8 @@ img {
   img {
     width: 25%;
   }
-  .navbar-toggler{
-    background-color:#129f95;
+  .navbar-toggler {
+    background-color: #129f95;
   }
 }
 </style>
