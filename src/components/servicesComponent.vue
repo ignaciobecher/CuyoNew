@@ -35,7 +35,7 @@
       <button><i class="bi bi-telephone"></i>  <a
           style="text-decoration: none; color: white"
           target="_blank"
-          href="https://wa.link/212bz3"
+          href="https://wa.link/71b5v7"
           >AGENDA UNA LLAMADA</a
         ></button>
     </div>

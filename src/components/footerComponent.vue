@@ -16,7 +16,7 @@
         </p>
         <!-- <p class="underline">CURSOS</p> -->
         <p class="underline">
-          <a class="routerClass" target="_blank" href="https://wa.link/212bz3">CONTACTO</a>
+          <a class="routerClass" target="_blank" href="https://wa.link/71b5v7">CONTACTO</a>
         </p>
       </div>
       <div class="center">
@@ -28,13 +28,13 @@
       <div class="right">
         <h6>Contacto</h6>
         <p>cuyosoftware@gmail.com</p>
-        <p>2657-201291</p>
+        <p>351-7892183</p>
       </div>
       <div class="social">
         <h6>Seguinos en nuestras redes</h6>
         <a class="routerClass" href="https://www.instagram.com/cuyocode/"><i class="bi bi-instagram"></i>Instagram</a>
         <a class="routerClass" href="https://www.facebook.com/people/CuyoCode/100092369985447/"><i class="bi bi-facebook"></i>Facebook</a>
-        <a class="routerClass" href="https://wa.link/212bz3"><i class="bi bi-whatsapp"></i>WhatsApp</a>
+        <a class="routerClass" href="https://wa.link/71b5v7"><i class="bi bi-whatsapp"></i>WhatsApp</a>
       </div>
       <p style="color: white">©CuyoCode. Todos los derechos reservados.</p>
     </div>
@@ -57,7 +57,7 @@
         </p>
         <!-- <p class="underline">CURSOS</p> -->
         <p class="underline">
-          <a class="routerClass" target="_blank" href="https://wa.link/212bz3">CONTACTO</a>
+          <a class="routerClass" target="_blank" href="https://wa.link/71b5v7">CONTACTO</a>
         </p>
       </div>
       <div class="center">
@@ -69,13 +69,13 @@
       <div class="right">
         <h6>Contacto</h6>
         <p>cuyosoftware@gmail.com</p>
-        <p>2657-201291</p>
+        <p>351-7892183</p>
       </div>
       <div class="social">
         <h6>Seguinos en nuestras redes</h6>
         <a class="routerClass" href="https://www.instagram.com/cuyocode/"><i class="bi bi-instagram"></i>Instagram</a>
         <a class="routerClass" href="https://www.facebook.com/people/CuyoCode/100092369985447/"><i class="bi bi-facebook"></i>Facebook</a>
-        <a class="routerClass" href="https://wa.link/212bz3"><i class="bi bi-whatsapp"></i>WhatsApp</a>
+        <a class="routerClass" href="https://wa.link/71b5v7"><i class="bi bi-whatsapp"></i>WhatsApp</a>
       </div>
       <p style="color: white">©CuyoCode. Todos los derechos reservados.</p>
     </div>

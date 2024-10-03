@@ -44,7 +44,7 @@
             </li> -->
 
             <li class="nav-item">
-              <a class="nav-link underline" target="_blank" href="https://wa.link/212bz3">CONTACTO</a>
+              <a class="nav-link underline" target="_blank" href="https://wa.link/71b5v7">CONTACTO</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
@@ -57,7 +57,7 @@
               <a class="nav-link" target="_blank" href="https://www.instagram.com/cuyocode/"><i class="bi bi-instagram"></i></a>
             </li>
             <li class="nav-item icon-link">
-              <a class="nav-link" target="_blank" href="https://wa.link/212bz3"><i class="bi bi-whatsapp"></i></a>
+              <a class="nav-link" target="_blank" href="https://wa.link/71b5v7"><i class="bi bi-whatsapp"></i></a>
             </li>
           </ul>
         </div>
