@@ -1,291 +1,630 @@
 <template>
-  <div class="tech-container">
-    <div class="top">
-      <h1>Tecnologías</h1>
-    </div>
+  <div class="technologies-container">
+    <!-- Background Pattern -->
+    <div class="background-pattern"></div>
+    
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+      <!-- Header Section -->
+      <div class="header-section">
+        <div class="section-badge">
+          <span>Nuestras Tecnologías</span>
+        </div>
+        
+        <h1 class="main-title">
+          <span class="title-line">Dominamos las</span>
+          <span class="title-line highlight">mejores</span>
+          <span class="title-line">tecnologías</span>
+        </h1>
+        
+        <p class="subtitle">
+          Utilizamos las herramientas más avanzadas y confiables del mercado para 
+          crear soluciones robustas, escalables y de alto rendimiento.
+        </p>
+      </div>
 
-    <div class="bottom">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 48 48"
-      >
-        <path
-          fill="#F44336"
-          d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z"
-        ></path>
-        <path
-          fill="#F44336"
-          d="M23.878,17.27c-0.192,2.516,2.229,3.857,2.299,5.695c0.056,1.496-1.447,2.743-1.447,2.743s2.728-0.536,3.579-2.818c0.945-2.534-1.834-4.269-1.548-6.298c0.267-1.938,6.031-5.543,6.031-5.543S24.311,11.611,23.878,17.27z"
-        ></path>
-        <g>
-          <path
-            fill="#1565C0"
-            d="M32.084 25.055c1.754-.394 3.233.723 3.233 2.01 0 2.901-4.021 5.643-4.021 5.643s6.225-.742 6.225-5.505C37.521 24.053 34.464 23.266 32.084 25.055zM29.129 27.395c0 0 1.941-1.383 2.458-1.902-4.763 1.011-15.638 1.147-15.638.269 0-.809 3.507-1.638 3.507-1.638s-7.773-.112-7.773 2.181C11.683 28.695 21.858 28.866 29.129 27.395z"
-          ></path>
-          <path
-            fill="#1565C0"
-            d="M27.935,29.571c-4.509,1.499-12.814,1.02-10.354-0.993c-1.198,0-2.974,0.963-2.974,1.889c0,1.857,8.982,3.291,15.63,0.572L27.935,29.571z"
-          ></path>
-          <path
-            fill="#1565C0"
-            d="M18.686,32.739c-1.636,0-2.695,1.054-2.695,1.822c0,2.391,9.76,2.632,13.627,0.205l-2.458-1.632C24.271,34.404,17.014,34.579,18.686,32.739z"
-          ></path>
-          <path
-            fill="#1565C0"
-            d="M36.281,36.632c0-0.936-1.055-1.377-1.433-1.588c2.228,5.373-22.317,4.956-22.317,1.784c0-0.721,1.807-1.427,3.477-1.093l-1.42-0.839C11.26,34.374,9,35.837,9,37.017C9,42.52,36.281,42.255,36.281,36.632z"
-          ></path>
-          <path
-            fill="#1565C0"
-            d="M39,38.604c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z"
-          ></path>
-        </g>
-      </svg>
+      <!-- Technologies Grid -->
+      <div class="technologies-grid">
+        <div 
+          v-for="(tech, index) in technologies" 
+          :key="index"
+          class="tech-card"
+          :style="{ animationDelay: `${index * 0.1}s` }"
+        >
+          <div class="tech-icon-wrapper">
+            <div class="tech-icon" :class="tech.iconClass">
+              <span class="icon-text">{{ tech.iconText }}</span>
+            </div>
+            <div class="tech-glow"></div>
+          </div>
+          <div class="tech-info">
+            <h3 class="tech-name">{{ tech.name }}</h3>
+            <p class="tech-category">{{ tech.category }}</p>
+          </div>
+          <div class="tech-overlay"></div>
+        </div>
+      </div>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 48 48"
-      >
-        <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
-        <path
-          fill="#000001"
-          d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"
-        ></path>
-      </svg>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 48 48"
-      >
-        <path
-          fill="#388e3c"
-          d="M17.204 19.122l-4.907 2.715C12.113 21.938 12 22.126 12 22.329v5.433c0 .203.113.39.297.492l4.908 2.717c.183.101.41.101.593 0l4.907-2.717C22.887 28.152 23 27.965 23 27.762v-5.433c0-.203-.113-.39-.297-.492l-4.906-2.715c-.092-.051-.195-.076-.297-.076-.103 0-.205.025-.297.076M42.451 24.013l-.818.452c-.031.017-.049.048-.049.082v.906c0 .034.019.065.049.082l.818.453c.031.017.068.017.099 0l.818-.453c.03-.017.049-.048.049-.082v-.906c0-.034-.019-.065-.05-.082l-.818-.452C42.534 24.004 42.517 24 42.5 24S42.466 24.004 42.451 24.013"
-        ></path>
-        <path
-          fill="#37474f"
-          d="M35.751,13.364l-2.389-1.333c-0.075-0.042-0.167-0.041-0.241,0.003 c-0.074,0.044-0.12,0.123-0.12,0.209L33,20.295l-2.203-1.219C30.705,19.025,30.602,19,30.5,19c-0.102,0-0.205,0.025-0.297,0.076 h0.001l-4.907,2.715C25.113,21.892,25,22.08,25,22.282v5.433c0,0.203,0.113,0.39,0.297,0.492l4.908,2.717 c0.183,0.101,0.41,0.101,0.593,0l4.907-2.717C35.887,28.106,36,27.918,36,27.715V13.788C36,13.612,35.904,13.45,35.751,13.364z M32.866,26.458l-2.23,1.235c-0.083,0.046-0.186,0.046-0.269,0l-2.231-1.235C28.051,26.412,28,26.326,28,26.234v-2.47 c0-0.092,0.051-0.177,0.135-0.224l2.231-1.234h-0.001c0.042-0.023,0.088-0.034,0.135-0.034c0.047,0,0.093,0.012,0.135,0.034 l2.23,1.234C32.949,23.587,33,23.673,33,23.765v2.47C33,26.326,32.949,26.412,32.866,26.458z"
-        ></path>
-        <path
-          fill="#2e7d32"
-          d="M17.204,19.122L12,27.762c0,0.203,0.113,0.39,0.297,0.492l4.908,2.717 c0.183,0.101,0.41,0.101,0.593,0L23,22.329c0-0.203-0.113-0.39-0.297-0.492l-4.906-2.715c-0.092-0.051-0.195-0.076-0.297-0.076 c-0.103,0-0.205,0.025-0.297,0.076"
-        ></path>
-        <path
-          fill="#4caf50"
-          d="M17.204,19.122l-4.907,2.715C12.113,21.938,12,22.126,12,22.329l5.204,8.642 c0.183,0.101,0.41,0.101,0.593,0l4.907-2.717C22.887,28.152,23,27.965,23,27.762l-5.203-8.64c-0.092-0.051-0.195-0.076-0.297-0.076 c-0.103,0-0.205,0.025-0.297,0.076"
-        ></path>
-        <path
-          fill="#37474f"
-          d="M47.703 21.791l-4.906-2.715C42.705 19.025 42.602 19 42.5 19c-.102 0-.205.025-.297.076h.001l-4.907 2.715C37.114 21.892 37 22.084 37 22.294v5.411c0 .209.114.402.297.503l4.908 2.717c.184.102.409.102.593 0l2.263-1.253c.207-.115.206-.412-.002-.526l-4.924-2.687C40.052 26.412 40 26.325 40 26.231v-2.466c0-.092.05-.177.13-.221l2.235-1.236h-.001c.042-.023.088-.034.135-.034.047 0 .093.012.135.034l2.235 1.237c.08.044.13.129.13.221v2.012c0 .086.046.166.121.209.075.042.167.042.242-.001l2.398-1.393c.148-.086.24-.245.24-.417v-1.88C48 22.085 47.886 21.892 47.703 21.791zM10.703 21.791l-4.906-2.715C5.705 19.025 5.602 19 5.5 19c-.102 0-.205.025-.297.076h.001l-4.907 2.715C.114 21.892 0 22.084 0 22.294v7.465c0 .086.046.166.121.209.075.042.167.042.242-.001l2.398-1.393C2.909 28.488 3 28.329 3 28.157v-4.393c0-.092.05-.177.13-.221l2.235-1.236H5.365c.042-.023.088-.034.135-.034.047 0 .093.012.135.034l2.235 1.237C7.95 23.588 8 23.673 8 23.765v4.393c0 .172.091.331.24.417l2.398 1.393c.075.043.167.043.242.001C10.954 29.925 11 29.845 11 29.759v-7.464C11 22.085 10.886 21.892 10.703 21.791z"
-        ></path>
-      </svg>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 50 50"
-      >
-        <path
-          d="M 31.167969 8 C 30.699219 7.988281 30.289063 8.167969 30.078125 8.6875 C 29.71875 9.558594 30.613281 10.410156 30.933594 10.855469 C 31.15625 11.164063 31.445313 11.511719 31.605469 11.859375 C 31.710938 12.089844 31.726563 12.320313 31.816406 12.5625 C 32.039063 13.160156 32.394531 13.839844 32.679688 14.394531 C 32.824219 14.675781 32.984375 14.96875 33.167969 15.21875 C 33.28125 15.371094 33.472656 15.441406 33.503906 15.675781 C 33.316406 15.941406 33.304688 16.351563 33.199219 16.6875 C 32.722656 18.191406 32.902344 20.0625 33.59375 21.171875 C 33.808594 21.515625 34.3125 22.246094 35 21.96875 C 35.601563 21.722656 35.46875 20.960938 35.640625 20.285156 C 35.679688 20.136719 35.65625 20.023438 35.734375 19.921875 L 35.734375 19.953125 C 35.914063 20.320313 36.097656 20.6875 36.28125 21.050781 C 36.691406 21.707031 37.414063 22.390625 38.023438 22.855469 C 38.339844 23.09375 38.589844 23.507813 39 23.648438 L 39 23.617188 L 38.96875 23.617188 C 38.890625 23.492188 38.765625 23.441406 38.664063 23.34375 C 38.425781 23.109375 38.160156 22.816406 37.964844 22.546875 C 37.40625 21.792969 36.914063 20.964844 36.46875 20.105469 C 36.253906 19.695313 36.066406 19.242188 35.886719 18.824219 C 35.816406 18.660156 35.816406 18.417969 35.671875 18.332031 C 35.472656 18.640625 35.183594 18.886719 35.03125 19.25 C 34.789063 19.828125 34.753906 20.535156 34.664063 21.265625 C 34.609375 21.285156 34.632813 21.269531 34.605469 21.296875 C 34.179688 21.191406 34.027344 20.753906 33.871094 20.378906 C 33.472656 19.429688 33.394531 17.898438 33.75 16.808594 C 33.839844 16.523438 34.25 15.632813 34.085938 15.371094 C 34.007813 15.109375 33.742188 14.960938 33.597656 14.761719 C 33.414063 14.515625 33.234375 14.191406 33.109375 13.90625 C 32.78125 13.164063 32.472656 12.304688 32.125 11.554688 C 31.960938 11.195313 31.683594 10.835938 31.453125 10.515625 C 31.199219 10.164063 30.917969 9.90625 30.71875 9.476563 C 30.652344 9.328125 30.554688 9.085938 30.660156 8.929688 C 30.691406 8.824219 30.738281 8.78125 30.84375 8.746094 C 31.019531 8.609375 31.511719 8.789063 31.699219 8.867188 C 32.1875 9.070313 32.597656 9.265625 33.011719 9.539063 C 33.210938 9.671875 33.410156 9.925781 33.652344 10 L 33.925781 10 C 34.359375 10.097656 34.839844 10.027344 35.238281 10.152344 C 35.949219 10.367188 36.585938 10.703125 37.160156 11.066406 C 38.921875 12.175781 40.363281 13.757813 41.34375 15.644531 C 41.503906 15.949219 41.574219 16.242188 41.714844 16.5625 C 41.992188 17.210938 42.347656 17.882813 42.628906 18.515625 C 42.90625 19.152344 43.179688 19.789063 43.574219 20.316406 C 43.78125 20.59375 44.585938 20.746094 44.949219 20.898438 C 45.203125 21.007813 45.625 21.121094 45.863281 21.265625 C 46.328125 21.542969 46.773438 21.875 47.207031 22.183594 C 47.425781 22.335938 48.089844 22.667969 48.125 22.945313 C 47.050781 22.917969 46.230469 23.015625 45.53125 23.3125 C 45.332031 23.398438 45.011719 23.398438 44.980469 23.648438 C 45.085938 23.761719 45.105469 23.933594 45.191406 24.074219 C 45.359375 24.34375 45.640625 24.707031 45.894531 24.898438 C 46.171875 25.105469 46.453125 25.328125 46.75 25.511719 C 47.273438 25.828125 47.859375 26.011719 48.367188 26.332031 C 48.664063 26.523438 48.964844 26.761719 49.253906 26.972656 C 49.398438 27.082031 49.492188 27.246094 49.679688 27.3125 L 49.679688 27.28125 C 49.582031 27.15625 49.558594 26.984375 49.46875 26.855469 L 49.066406 26.453125 C 48.679688 25.941406 48.1875 25.488281 47.664063 25.113281 C 47.246094 24.8125 46.3125 24.40625 46.140625 23.921875 L 46.109375 23.890625 C 46.402344 23.859375 46.75 23.75 47.023438 23.675781 C 47.484375 23.554688 47.890625 23.585938 48.363281 23.464844 C 48.578125 23.402344 48.792969 23.339844 49.007813 23.28125 L 49.007813 23.15625 C 48.769531 22.914063 48.597656 22.585938 48.335938 22.363281 C 47.652344 21.78125 46.90625 21.199219 46.136719 20.714844 C 45.710938 20.445313 45.183594 20.269531 44.734375 20.042969 C 44.582031 19.964844 44.316406 19.925781 44.214844 19.796875 C 43.976563 19.496094 43.847656 19.113281 43.664063 18.761719 C 43.28125 18.023438 42.90625 17.21875 42.566406 16.441406 C 42.335938 15.914063 42.183594 15.390625 41.894531 14.914063 C 40.507813 12.636719 39.015625 11.257813 36.703125 9.90625 C 36.210938 9.617188 35.621094 9.507813 34.996094 9.359375 C 34.65625 9.335938 34.324219 9.316406 33.984375 9.296875 C 33.78125 9.210938 33.566406 8.960938 33.375 8.835938 C 32.894531 8.535156 31.949219 8.011719 31.167969 8 Z M 34.476563 11.3125 C 34.253906 11.308594 34.09375 11.339844 33.925781 11.375 L 33.925781 11.40625 L 33.957031 11.40625 C 34.0625 11.625 34.253906 11.765625 34.386719 11.953125 C 34.488281 12.167969 34.585938 12.382813 34.6875 12.597656 L 34.71875 12.566406 C 34.90625 12.433594 34.996094 12.21875 34.996094 11.894531 C 34.917969 11.816406 34.90625 11.714844 34.84375 11.621094 C 34.753906 11.492188 34.585938 11.421875 34.476563 11.3125 Z M 1.867188 23.996094 C 1.566406 24.007813 1.238281 24.066406 0.882813 24.179688 C 0.289063 24.359375 -0.00390625 24.714844 -0.00390625 25.4375 L -0.00390625 33 L 2 33 L 2 25.621094 L 4.777344 31.929688 C 5.121094 32.714844 5.589844 32.996094 6.507813 32.996094 C 7.429688 32.996094 7.878906 32.714844 8.222656 31.929688 L 11 25.78125 L 11 33 L 13 33 L 13 25.4375 C 13 24.714844 12.710938 24.359375 12.113281 24.179688 C 10.691406 23.730469 9.734375 24.117188 9.304688 25.089844 L 6.453125 31.503906 L 3.695313 25.089844 C 3.382813 24.359375 2.757813 23.960938 1.867188 23.996094 Z M 26.246094 24 C 25.457031 24 23 24.09375 23 26 L 23 27.234375 C 23 28.109375 23.769531 28.824219 25.4375 29 C 25.625 29.011719 25.8125 29.027344 26 29.027344 C 26 29.027344 27.945313 28.988281 28 29 C 29.125 29 29 29.875 29 30 L 29 31 C 29 31.136719 28.96875 32 27.988281 32 L 23 32 L 23 33 L 28.007813 33 C 28.664063 33 29.300781 32.863281 29.808594 32.625 C 30.652344 32.238281 31 31.714844 31 31.027344 L 31 29.597656 C 31 28.0625 29.09375 28 28 28 L 26 28 C 25.214844 28 25.09375 27.523438 25 27 L 25 26 C 25.09375 25.601563 25.269531 25.0625 25.964844 25 L 31 25 L 31 24 Z M 33.980469 24 C 32.503906 24.203125 31.984375 24.9375 31.984375 26 L 31.984375 31 C 31.984375 31.972656 32.527344 32.558594 33.644531 32.863281 C 34.019531 32.96875 34.359375 33.011719 34.679688 33.011719 L 36.90625 33 L 38.214844 33 L 39.328125 34 L 41.578125 34 L 40.03125 32.605469 C 40.757813 32.304688 40.984375 31.84375 40.984375 30.980469 L 40.984375 26 C 40.984375 24.9375 40.292969 24.203125 38.816406 24 Z M 42 24 L 42 30.957031 C 42 32.164063 42.683594 32.84375 44.492188 32.980469 C 44.660156 32.988281 44.832031 33 45 33 L 50 33 L 50 32 L 45.378906 32 C 44.347656 32 44 31.566406 44 30.949219 L 44 24 Z M 35.171875 25 L 37.746094 25 C 38.425781 25 38.882813 25.546875 38.984375 26 C 38.984375 26 39 30.65625 39 31 C 39 31.34375 38.808594 31.5 38.808594 31.5 L 38.265625 31 L 36 31 L 37.113281 32 L 35.171875 32 C 34.476563 32 34.085938 31.484375 33.984375 31 L 33.984375 26.101563 C 33.984375 25.570313 34.390625 25 35.171875 25 Z M 14 27 C 14.039063 27.039063 14 31.261719 14 31.34375 C 14.015625 32.21875 15.125 32.984375 16.863281 33 L 20 33 L 20 33.066406 C 20 33.253906 20.136719 33.878906 19 34 C 18.988281 34 14.011719 34 14 34 L 14 35 L 19.214844 35 C 20.097656 34.972656 22.011719 34.773438 22 33.242188 C 22 33.214844 22.007813 27 22 27 L 20 27 L 20 32 C 19.96875 32 17.523438 32.007813 17.03125 32 C 16.066406 31.984375 15.984375 31.433594 16 31.222656 L 16 27 Z"
-        ></path>
-      </svg>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 48 48"
-      >
-        <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
-        <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
-        <path
-          fill="#FFF"
-          d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
-        ></path>
-        <path
-          fill="#EEE"
-          d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
-        ></path>
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 48 48"
-      >
-        <path
-          fill="#7cb342"
-          d="M12 29c0 1.1-.9 2-2 2s-2-.9-2-2v-9c0-1.1.9-2 2-2s2 .9 2 2V29zM40 29c0 1.1-.9 2-2 2s-2-.9-2-2v-9c0-1.1.9-2 2-2s2 .9 2 2V29zM22 40c0 1.1-.9 2-2 2s-2-.9-2-2v-9c0-1.1.9-2 2-2s2 .9 2 2V40zM30 40c0 1.1-.9 2-2 2s-2-.9-2-2v-9c0-1.1.9-2 2-2s2 .9 2 2V40z"
-        ></path>
-        <path
-          fill="#7cb342"
-          d="M14 18v15c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V18H14zM24 8c-6 0-9.7 3.6-10 8h20C33.7 11.6 30 8 24 8zM20 13.6c-.6 0-1-.4-1-1 0-.6.4-1 1-1s1 .4 1 1C21 13.1 20.6 13.6 20 13.6zM28 13.6c-.6 0-1-.4-1-1 0-.6.4-1 1-1s1 .4 1 1C29 13.1 28.6 13.6 28 13.6z"
-        ></path>
-        <path
-          fill="#7cb342"
-          d="M28.3 10.5c-.2 0-.4-.1-.6-.2-.5-.3-.6-.9-.3-1.4l1.7-2.5c.3-.5.9-.6 1.4-.3.5.3.6.9.3 1.4l-1.7 2.5C29 10.3 28.7 10.5 28.3 10.5zM19.3 10.1c-.3 0-.7-.2-.8-.5l-1.3-2.1c-.3-.5-.2-1.1.3-1.4.5-.3 1.1-.2 1.4.3l1.3 2.1c.3.5.2 1.1-.3 1.4C19.7 10 19.5 10.1 19.3 10.1z"
-        ></path>
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 48 48"
-      >
-        <path
-          fill="#212121"
-          d="M23.697,37.56h1.18c0.84,0,1.631-0.392,2.139-1.061l7.485-9.847l7.485,9.847	c0.508,0.668,1.299,1.061,2.139,1.061h1.18L35.756,25l9.121-12h-1.18c-0.84,0-1.631,0.392-2.139,1.061L34.5,23.347l-7.059-9.287	C26.933,13.392,26.142,13,25.302,13h-1.18l9.121,12L23.697,37.56z"
-        ></path>
-        <path
-          fill="#212121"
-          d="M24,26v-3c0-6.675-5.945-11.961-12.829-10.852C5.812,13.011,2,17.857,2,23.284L2,24v2v0.142	c0,6.553,4.777,11.786,10.868,11.858c5.092,0.06,9.389-3.344,10.707-7.999h-1.028c-0.62,0-1.182,0.355-1.451,0.913	c-1.739,3.595-5.789,5.862-10.228,4.842C6.776,34.815,4,30.981,4,26.783V26H24z M4,23.71c0-4.708,2.804-8.557,6.924-9.478	C16.798,12.92,22,17.352,22,23v1H4V23.71z"
-        ></path>
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 48 48"
-      >
-        <polygon
-          fill="#81c784"
-          points="23.987,17 18.734,8 2.974,8 23.987,44 45,8 29.24,8"
-        ></polygon>
-        <polygon
-          fill="#455a64"
-          points="29.24,8 23.987,17 18.734,8 11.146,8 23.987,30 36.828,8"
-        ></polygon>
-      </svg>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 48 48"
-      >
-        <path
-          fill="#00549d"
-          fill-rule="evenodd"
-          d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z"
-          clip-rule="evenodd"
-        ></path>
-        <path
-          fill="#0086d4"
-          fill-rule="evenodd"
-          d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z"
-          clip-rule="evenodd"
-        ></path>
-        <path
-          fill="#fff"
-          fill-rule="evenodd"
-          d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z"
-          clip-rule="evenodd"
-        ></path>
-        <path
-          fill="#0075c0"
-          fill-rule="evenodd"
-          d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z"
-          clip-rule="evenodd"
-        ></path>
-        <path
-          fill="#fff"
-          fill-rule="evenodd"
-          d="M31 21H33V27H31zM38 21H40V27H38z"
-          clip-rule="evenodd"
-        ></path>
-        <path
-          fill="#fff"
-          fill-rule="evenodd"
-          d="M29 23H35V25H29zM36 23H42V25H36z"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 48 48"
-      >
-        <circle cx="24" cy="24" r="9" fill="#448aff"></circle>
-        <circle cx="37" cy="11" r="4" fill="#448aff"></circle>
-        <path
-          fill="#448aff"
-          d="M41.706,14.715c-0.842,1.064-2.034,1.836-3.405,2.139C39.379,19.007,40,21.429,40,24	c0,8.837-7.163,16-16,16S8,32.837,8,24S15.163,8,24,8c2.571,0,4.993,0.621,7.145,1.699c0.303-1.371,1.075-2.564,2.139-3.405	C30.509,4.835,27.354,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20C44,20.646,43.165,17.491,41.706,14.715	z"
-        ></path>
-      </svg>
+      <!-- CTA Section -->
+      <div class="cta-section">
+        <h2 class="cta-title">¿Necesitas una tecnología específica?</h2>
+        <p class="cta-description">
+          Contamos con experiencia en múltiples tecnologías. Consultanos sobre tu proyecto específico.
+        </p>
+        <button class="cta-button">
+          <a href="https://wa.link/jajbyw" target="_blank" class="button-link">
+            <span class="phone-icon">📞</span>
+            CONSULTAR AHORA
+          </a>
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
+<script>
+export default {
+  name: 'TechnologiesComponent',
+  data() {
+    return {
+      technologies: [
+        {
+          name: 'Java',
+          category: 'Backend',
+          iconClass: 'java-icon',
+          iconText: 'J'
+        },
+        {
+          name: 'JavaScript',
+          category: 'Frontend/Backend',
+          iconClass: 'javascript-icon',
+          iconText: 'JS'
+        },
+        {
+          name: 'Node.js',
+          category: 'Backend',
+          iconClass: 'nodejs-icon',
+          iconText: 'N'
+        },
+        {
+          name: 'MySQL',
+          category: 'Base de Datos',
+          iconClass: 'mysql-icon',
+          iconText: 'DB'
+        },
+        {
+          name: 'HTML5',
+          category: 'Frontend',
+          iconClass: 'html-icon',
+          iconText: 'H5'
+        },
+        {
+          name: 'Android',
+          category: 'Mobile',
+          iconClass: 'android-icon',
+          iconText: '📱'
+        },
+        {
+          name: 'Express',
+          category: 'Backend',
+          iconClass: 'excel-icon',
+          iconText: 'EX'
+        },
+        {
+          name: 'Vue.js',
+          category: 'Frontend',
+          iconClass: 'vue-icon',
+          iconText: 'V'
+        },
+        {
+          name: 'Docker',
+          category: 'DevOps',
+          iconClass: 'docker-icon',
+          iconText: '🐳'
+        },
+        {
+          name: 'React',
+          category: 'Frontend',
+          iconClass: 'react-icon',
+          iconText: 'R'
+        }
+      ]
+    }
+  },
+  mounted() {
+    this.initAnimations();
+  },
+  methods: {
+    initAnimations() {
+      // Animate elements on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      });
+
+      // Observe tech cards
+      const techCards = document.querySelectorAll('.tech-card');
+      techCards.forEach(card => observer.observe(card));
+
+      // Observe title lines
+      const titleLines = document.querySelectorAll('.title-line');
+      titleLines.forEach((line, index) => {
+        line.style.animationDelay = `${index * 0.1}s`;
+        observer.observe(line);
+      });
+    }
+  }
+}
+</script>
+
 <style scoped>
-.tech-container {
-  background-color: #139492;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  padding-left: 30px;
-  padding-right: 30px;
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.top h1 {
-  color: #271b7e;
+/* Technologies Container */
+.technologies-container {
+  position: relative;
+  background: linear-gradient(135deg, #0cc39b 0%, #08a085 100%);
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 6rem 0;
+}
+
+/* Background Pattern */
+.background-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(42, 8, 120, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(42, 8, 120, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.background-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%);
+  background-size: 100px 100px;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 5;
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: rgba(42, 8, 120, 0.15);
+  color: #2a0878;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(42, 8, 120, 0.3);
+  backdrop-filter: blur(10px);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.main-title {
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.title-line {
+  display: block;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  color: #2a0878;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  margin-bottom: 0.2rem;
+}
+
+.title-line.highlight {
+  color: #ffffff;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #2a0878;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 500;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Technologies Grid */
+.technologies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.tech-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.tech-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tech-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(42, 8, 120, 0.3);
+  box-shadow: 0 25px 70px rgba(42, 8, 120, 0.2);
+}
+
+.tech-icon-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
   font-weight: bold;
-}
-.bottom {
-  margin-top: 50px;
+  font-size: 1.5rem;
 }
 
-.bottom svg {
-  margin: 10px;
-  transition: all 0.3s ease;
+.icon-text {
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.bottom svg:hover {
-  transform: scale(1.2);
+/* Specific icon styles */
+.java-icon {
+  background: linear-gradient(135deg, #f89820 0%, #ed8b00 100%);
+  color: white;
 }
 
-/* ---------------------------------------ESTILOS PARA CELULAR---------------------------------------- */
-@media screen and (max-width: 768px) {
-  .top h1 {
-    color: #271b7e;
-    font-weight: bold;
-    text-align: center;
-    font-size: 35px;
+.javascript-icon {
+  background: linear-gradient(135deg, #f7df1e 0%, #f0d91d 100%);
+  color: #323330;
+}
+
+.nodejs-icon {
+  background: linear-gradient(135deg, #68a063 0%, #5d8f57 100%);
+  color: white;
+}
+
+.mysql-icon {
+  background: linear-gradient(135deg, #00758f 0%, #005a6b 100%);
+  color: white;
+}
+
+.html-icon {
+  background: linear-gradient(135deg, #e34c26 0%, #d63918 100%);
+  color: white;
+}
+
+.android-icon {
+  background: linear-gradient(135deg, #a4c639 0%, #8fb030 100%);
+  color: white;
+}
+
+.excel-icon {
+  background: linear-gradient(135deg, #217346 0%, #1a5c37 100%);
+  color: white;
+}
+
+.vue-icon {
+  background: linear-gradient(135deg, #4fc08d 0%, #42a374 100%);
+  color: white;
+}
+
+.docker-icon {
+  background: linear-gradient(135deg, #0db7ed 0%, #0a9bc7 100%);
+  color: white;
+}
+
+.react-icon {
+  background: linear-gradient(135deg, #61dafb 0%, #4fa8c5 100%);
+  color: #20232a;
+}
+
+.tech-card:hover .tech-icon {
+  transform: scale(1.2) rotateY(10deg);
+}
+
+.tech-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(12, 195, 155, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tech-card:hover .tech-glow {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.tech-info {
+  position: relative;
+  z-index: 2;
+}
+
+.tech-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2a0878;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tech-card:hover .tech-name {
+  color: #1a0550;
+  transform: translateY(-2px);
+}
+
+.tech-category {
+  font-size: 0.9rem;
+  color: rgba(42, 8, 120, 0.7);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tech-card:hover .tech-category {
+  color: #0cc39b;
+  font-weight: 600;
+}
+
+.tech-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(12, 195, 155, 0.05) 0%, rgba(8, 160, 133, 0.1) 100%);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 20px;
+}
+
+.tech-card:hover .tech-overlay {
+  opacity: 1;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(42, 8, 120, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  border: 1px solid rgba(42, 8, 120, 0.2);
+}
+
+.cta-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #2a0878;
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  font-size: 1.2rem;
+  color: #2a0878;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.cta-button {
+  padding: 1.2rem 3rem;
+  border: none;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2a0878 0%, #1a0550 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 40px rgba(42, 8, 120, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 50px rgba(42, 8, 120, 0.4);
+  background: linear-gradient(135deg, #1a0550 0%, #2a0878 100%);
+}
+
+.button-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.phone-icon {
+  font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-
-  .bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  .bottom svg {
-    margin: 0 auto;
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .content-wrapper {
+    padding: 0 1.5rem;
+  }
+  
+  .technologies-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 0 1rem;
+  }
+  
+  .header-section {
+    margin-bottom: 4rem;
+  }
+  
+  .technologies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .tech-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .tech-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .icon-text {
+    font-size: 1.5rem;
+  }
+  
+  .tech-name {
+    font-size: 1.1rem;
+  }
+  
+  .tech-category {
+    font-size: 0.8rem;
+  }
+  
+  .cta-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .technologies-container {
+    padding: 4rem 0;
+  }
+  
+  .technologies-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .tech-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .icon-text {
+    font-size: 1.2rem;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .background-pattern {
+    opacity: 0.3;
+  }
+  
+  .tech-card {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 </style>
