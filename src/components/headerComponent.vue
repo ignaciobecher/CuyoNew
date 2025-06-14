@@ -15,69 +15,58 @@
           <span class="title-line subtitle">TECNOLÓGICAS</span>
         </h1>
         <p class="hero-description">
-          Transformamos ideas en software innovador. Desarrollamos aplicaciones
-          web, móviles y sistemas empresariales con tecnología de vanguardia.
+          Transformamos ideas en software innovador. Desarrollamos aplicaciones web, móviles y sistemas empresariales con tecnología de vanguardia.
         </p>
         <div class="hero-actions">
           <button class="cta-button primary">
-            <a
-              href="https://wa.link/jajbyw"
-              target="_blank"
-              class="button-link"
-            >
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-              >
-                <path d="M8 2v4l-3-3-3 3V2h6zM16 2v4l3-3 3 3V2h-6z" />
-                <path d="M12 12v8" />
-                <path d="M8 16l4-4 4 4" />
+            <a href="https://wa.link/jajbyw" target="_blank" class="button-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M8 2v4l-3-3-3 3V2h6zM16 2v4l3-3 3 3V2h-6z"/>
+                <path d="M12 12v8"/>
+                <path d="M8 16l4-4 4 4"/>
               </svg>
               AGENDA UNA LLAMADA
             </a>
           </button>
+      
         </div>
       </div>
-
+      
       <!-- Decorative Elements -->
       <div class="hero-visual">
         <div class="floating-card card-1">
           <div class="card-content">
             <div class="card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path
-                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
-                />
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
               </svg>
             </div>
             <span>Desarrollo</span>
           </div>
         </div>
-
+        
         <div class="floating-card card-2">
           <div class="card-content">
             <div class="card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                <path d="M2 17l10 5 10-5" />
-                <path d="M2 12l10 5 10-5" />
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
               </svg>
             </div>
             <span>Arquitectura</span>
           </div>
         </div>
-
+        
         <div class="floating-card card-3">
           <div class="card-content">
             <div class="card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M9 12l2 2 4-4" />
-                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3" />
-                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3" />
-                <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3" />
-                <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3" />
+                <path d="M9 12l2 2 4-4"/>
+                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/>
+                <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
               </svg>
             </div>
             <span>Innovación</span>
@@ -98,30 +87,33 @@
       </div>
     </div>
   </div>
+
+  <!-- WhatsApp Float Button -->
+
 </template>
 
 <script>
 export default {
-  name: "HeaderComponent",
+  name: 'HeaderComponent',
   mounted() {
     this.initAnimations();
   },
   methods: {
     initAnimations() {
       // Animate floating cards
-      const cards = document.querySelectorAll(".floating-card");
+      const cards = document.querySelectorAll('.floating-card');
       cards.forEach((card, index) => {
         card.style.animationDelay = `${index * 0.5}s`;
       });
 
       // Animate hero text
-      const titleLines = document.querySelectorAll(".title-line");
+      const titleLines = document.querySelectorAll('.title-line');
       titleLines.forEach((line, index) => {
         line.style.animationDelay = `${index * 0.2}s`;
       });
-    },
-  },
-};
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -149,43 +141,23 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: radial-gradient(
-      circle at 20% 80%,
-      rgba(12, 195, 155, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 20%,
-      rgba(12, 195, 155, 0.08) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 40% 40%,
-      rgba(255, 255, 255, 0.05) 0%,
-      transparent 50%
-    );
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(12, 195, 155, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(12, 195, 155, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
   pointer-events: none;
 }
 
 .background-pattern::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(
-      45deg,
-      transparent 49%,
-      rgba(255, 255, 255, 0.02) 50%,
-      transparent 51%
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 49%,
-      rgba(255, 255, 255, 0.02) 50%,
-      transparent 51%
-    );
+  background-image: 
+    linear-gradient(45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%);
   background-size: 60px 60px;
 }
 
@@ -420,88 +392,6 @@ export default {
   font-weight: 600;
 }
 
-/* WhatsApp Float Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 60px;
-  height: 60px;
-  background: #25d366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3);
-  z-index: 1000;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: none;
-  color: white;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.4);
-}
-
-.whatsapp-float:hover .whatsapp-tooltip {
-  opacity: 1;
-  transform: translateX(-100%) translateY(-50%) scale(1);
-}
-
-.whatsapp-icon {
-  width: 30px;
-  height: 30px;
-}
-
-.whatsapp-tooltip {
-  position: absolute;
-  right: 70px;
-  top: 50%;
-  transform: translateX(-100%) translateY(-50%) scale(0.8);
-  background: #2a0878;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  white-space: nowrap;
-  opacity: 0;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
-}
-
-.whatsapp-tooltip::after {
-  content: "";
-  position: absolute;
-  right: -8px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 4px solid transparent;
-  border-left-color: #2a0878;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
 
 /* Responsive Design */
 @media (min-width: 1200px) {
@@ -516,13 +406,13 @@ export default {
     text-align: center;
     padding: 4rem 2rem 3rem;
   }
-
+  
   .hero-text {
     max-width: 100%;
     padding-right: 0;
     margin-bottom: 3rem;
   }
-
+  
   .hero-visual {
     display: none;
   }
@@ -532,85 +422,75 @@ export default {
   .hero-content {
     padding: 3rem 1rem 2rem;
   }
-
+  
   .badge {
     font-size: 0.8rem;
     padding: 0.5rem 1rem;
     margin-bottom: 2rem;
   }
-
+  
   .hero-description {
     font-size: 1.1rem;
     margin-bottom: 2.5rem;
   }
-
+  
   .hero-actions {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-
+  
   .cta-button {
     width: 100%;
     max-width: 320px;
     padding: 1rem 2rem;
   }
-
+  
   .stats-section {
     gap: 3rem;
     padding: 2rem 1rem;
   }
-
+  
   .stat-number {
     font-size: 2.5rem;
   }
-
+  
   .stat-label {
     font-size: 0.9rem;
   }
+  
 
-  .whatsapp-float {
-    width: 55px;
-    height: 55px;
-    bottom: 1.5rem;
-    right: 1.5rem;
-  }
-
-  .whatsapp-icon {
-    width: 26px;
-    height: 26px;
-  }
 }
 
 @media (max-width: 480px) {
   .hero-content {
     padding: 2rem 1rem;
   }
-
+  
   .title-line {
     font-size: clamp(2.2rem, 12vw, 3.5rem);
   }
-
+  
   .title-line.subtitle {
     font-size: clamp(1.4rem, 8vw, 2rem);
   }
-
+  
   .hero-description {
     font-size: 1rem;
   }
-
+  
   .cta-button {
     font-size: 0.9rem;
     padding: 0.9rem 1.5rem;
     min-width: 180px;
   }
-
+  
   .stats-section {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
   }
-
+  
   .stat-number {
     font-size: 2.2rem;
   }
@@ -621,7 +501,7 @@ export default {
   .background-pattern {
     opacity: 0.3;
   }
-
+  
   .floating-card {
     border-width: 2px;
   }
