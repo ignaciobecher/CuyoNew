@@ -24,22 +24,7 @@
 
       <!-- Clients Grid -->
       <div class="clients-grid">
-        <!-- Cliente 1: Adminia -->
-        <div class="client-card" style="animation-delay: 0s;">
-          <div class="client-logo-wrapper">
-            <img 
-              src="../assets/logosClientes/adminia.png" 
-              alt="Adminia - Sistema de gestión"
-              class="client-logo standard"
-            />
-            <div class="client-overlay">
-              <div class="client-info">
-                <h3>Adminia</h3>
-                <p>Software de Gestión</p>
-              </div>
-            </div>
-          </div>
-        </div>
+   
 
         <!-- Cliente 2: Auto Salon -->
         <div class="client-card" style="animation-delay: 0.1s;">
@@ -75,39 +60,9 @@
           </div>
         </div>
 
-        <!-- Cliente 4: CA Consulting -->
-        <div class="client-card" style="animation-delay: 0.3s;">
-          <div class="client-logo-wrapper">
-            <img 
-              src="../assets/logosClientes/caLogo.png" 
-              alt="CA Logo - Consultoría"
-              class="client-logo standard"
-            />
-            <div class="client-overlay">
-              <div class="client-info">
-                <h3>CA</h3>
-                <p>Estación de servicio</p>
-              </div>
-            </div>
-          </div>
-        </div>
+   
 
-        <!-- Cliente 5: CDA -->
-        <div class="client-card" style="animation-delay: 0.4s;">
-          <div class="client-logo-wrapper">
-            <img 
-              src="../assets/logosClientes/cda.png" 
-              alt="CDA - Centro de Análisis"
-              class="client-logo small"
-            />
-            <div class="client-overlay">
-              <div class="client-info">
-                <h3>CDA</h3>
-                <p>Envasadora de agua</p>
-              </div>
-            </div>
-          </div>
-        </div>
+     
 
         <!-- Cliente 6: Educar -->
         <div class="client-card" style="animation-delay: 0.5s;">
@@ -162,22 +117,7 @@
           </div>
         </div>
 
-        <!-- Cliente 9: Matías Becher -->
-        <div class="client-card" style="animation-delay: 0.8s;">
-          <div class="client-logo-wrapper">
-            <img 
-              src="../assets/logosClientes/matiasBecher.png" 
-              alt="Matías Becher - Desarrollo"
-              class="client-logo standard"
-            />
-            <div class="client-overlay">
-              <div class="client-info">
-                <h3>Matías Becher</h3>
-                <p>Piloto de carreras</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    
 
         <!-- Cliente 10: Mercedes Rock -->
         <div class="client-card" style="animation-delay: 0.9s;">

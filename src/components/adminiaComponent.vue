@@ -26,77 +26,6 @@
       <!-- Products Grid -->
       <div class="products-grid">
         <!-- Adminiad Product -->
-        <div class="product-card featured">
-          <div class="product-header">
-            <div class="product-badge">Más Popular</div>
-            <div class="product-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M3 3h18v18H3zM9 9h6v6H9z" />
-                <path
-                  d="M9 1v6M15 1v6M9 17v6M15 17v6M1 9h6M1 15h6M17 9h6M17 15h6"
-                />
-              </svg>
-            </div>
-          </div>
-
-          <div class="product-content">
-            <h2 class="product-title">
-              <span class="brand-name">Adminiad</span>
-            </h2>
-            <p class="product-subtitle">La solución para tu negocio</p>
-            <p class="product-description">
-              Con Adminiad, nuestro SaaS de gestión de negocios, vas a poder
-              administrar tu negocio desde donde sea, con métricas en vivo,
-              asistido por inteligencia artificial.
-            </p>
-
-            <div class="product-features">
-              <div class="feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path d="M9 12l2 2 4-4" />
-                  <circle cx="12" cy="12" r="10" />
-                </svg>
-                <span>Métricas en tiempo real</span>
-              </div>
-              <div class="feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-                <span>Inteligencia artificial</span>
-              </div>
-              <div class="feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 6v6l4 2" />
-                </svg>
-                <span>Acceso 24/7</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-actions">
-            <button class="cta-button primary">
-              <a
-                href="https://adminiad.com/"
-                target="_blank"
-                class="button-link"
-              >
-                <svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path d="M7 17L17 7" />
-                  <path d="M7 7h10v10" />
-                </svg>
-                PRUEBA ADMINIAD GRATIS
-              </a>
-            </button>
-          </div>
-        </div>
 
         <!-- Foodify Product -->
         <div class="product-card">
@@ -169,7 +98,6 @@
                 SOLICITAR DEMO
               </a>
             </button>
-            
           </div>
         </div>
 
