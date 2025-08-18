@@ -25,7 +25,6 @@
 
       <!-- Products Grid -->
       <div class="products-grid">
-        <!-- Adminiad Product -->
 
         <!-- Foodify Product -->
         <div class="product-card">

@@ -67,24 +67,7 @@
         </div>
 
         <div class="associate-card">
-          <div class="associate-logo-wrapper">
-            <a href="https://adminiad.com/" target="_blank" class="associate-link">
-              <img src="../assets/adminia.png" alt="Adminia - Socio estratégico" class="associate-logo" />
-              <div class="associate-overlay">
-                <div class="associate-info">
-                  <h3>Adminia</h3>
-                  <p>Socio Estratégico</p>
-                  <div class="visit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <path d="M7 17L17 7"/>
-                      <path d="M7 7h10v10"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <div class="associate-glow"></div>
-          </div>
+      
         </div>
       </div>
 
