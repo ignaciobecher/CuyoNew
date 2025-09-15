@@ -41,13 +41,13 @@
 
           <div class="product-content">
             <h2 class="product-title">
-              <span class="brand-name foodify">Foodify</span>
+              <span class="brand-name foodify">Trainify</span>
             </h2>
             <p class="product-subtitle">Ventas automatizadas con IA</p>
             <p class="product-description">
-              Sistema inteligente de ventas automatizadas para restaurantes.
-              Optimiza pedidos, gestiona inventario y maximiza ganancias con
-              inteligencia artificial avanzada.
+             Sistema inteligente de gestión para gimnasios y centros de
+              entrenamiento. Optimiza tus ventas, administra membresías y
+              maximiza tus ingresos con la ayuda de la inteligencia artificial.
             </p>
 
             <div class="product-features">
@@ -57,7 +57,7 @@
                   <path d="M2 17l10 5 10-5" />
                   <path d="M2 12l10 5 10-5" />
                 </svg>
-                <span>IA para pedidos</span>
+                <span>IA para rutinas</span>
               </div>
               <div class="feature">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -65,14 +65,14 @@
                   <line x1="8" y1="21" x2="16" y2="21" />
                   <line x1="12" y1="17" x2="12" y2="21" />
                 </svg>
-                <span>Gestión de inventario</span>
+                <span>Gestión de socios</span>
               </div>
               <div class="feature">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <line x1="12" y1="1" x2="12" y2="23" />
                   <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                 </svg>
-                <span>Maximiza ganancias</span>
+                <span>Maximiza turnos</span>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@
           <div class="product-actions">
             <button class="cta-button secondary">
               <a
-                href="https://wa.link/jajbyw"
+                href="https://trainify.com.ar"
                 target="_blank"
                 class="button-link"
               >
@@ -94,7 +94,7 @@
                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
                   />
                 </svg>
-                SOLICITAR DEMO
+                Probar Demo
               </a>
             </button>
           </div>
@@ -158,7 +158,7 @@
           <div class="product-actions">
             <button class="cta-button secondary">
               <a
-                href="https://wa.link/jajbyw"
+                href="https://distrify.com.ar"
                 target="_blank"
                 class="button-link"
               >
@@ -172,7 +172,7 @@
                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
                   />
                 </svg>
-                SOLICITAR DEMO
+                Probar Demo
               </a>
             </button>
           </div>
