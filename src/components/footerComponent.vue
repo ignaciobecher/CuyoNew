@@ -54,6 +54,15 @@
               </div>
               <p>cuyosoftware@gmail.com</p>
             </div>
+                 <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <p>info@cuyocode.com.ar</p>
+            </div>
             <div class="contact-item">
               <div class="contact-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -61,6 +70,14 @@
                 </svg>
               </div>
               <p>2657-201291</p>
+            </div>
+                <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <p>351-7706985</p>
             </div>
           </div>
         </div>
@@ -226,7 +243,7 @@
 /* Footer Container */
 .footer-container {
   position: relative;
-  background: linear-gradient(135deg, #2a0878 0%, #1a0550 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   overflow: hidden;
 }
 
@@ -238,9 +255,9 @@
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 20% 80%, rgba(12, 195, 155, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(12, 195, 155, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    radial-gradient(circle at 25% 25%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 123, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -254,7 +271,7 @@
   background-image: 
     linear-gradient(45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%),
     linear-gradient(-45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%);
-  background-size: 60px 60px;
+  background-size: 40px 40px;
 }
 
 /* Router Links */
@@ -266,7 +283,7 @@
 }
 
 .routerClass:hover {
-  color: #0cc39b;
+  color: #00ffff;
 }
 
 /* Section Titles */
@@ -303,7 +320,7 @@
     right: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #0cc39b 0%, #08a085 100%);
+    background: linear-gradient(135deg, #00ffff 0%, #007bff 100%);
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   }
 
@@ -333,7 +350,7 @@
   }
 
   .left p:hover {
-    color: #0cc39b;
+    color: #00ffff;
     transform: translateX(5px);
   }
 
@@ -347,19 +364,19 @@
   .address-icon {
     width: 45px;
     height: 45px;
-    background: linear-gradient(135deg, #0cc39b 0%, #08a085 100%);
+    background: linear-gradient(135deg, #00ffff 0%, #007bff 100%);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(12, 195, 155, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
   }
 
   .address-icon svg {
     width: 22px;
     height: 22px;
-    stroke: #2a0878;
+    stroke: #1a1a2e;
     stroke-width: 2;
   }
 
@@ -381,23 +398,24 @@
     align-items: center;
     gap: 1rem;
     padding: 0.8rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
 
   .contact-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(12, 195, 155, 0.3);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(0, 255, 255, 0.3);
     transform: translateY(-2px);
   }
 
   .contact-icon {
     width: 35px;
     height: 35px;
-    background: linear-gradient(135deg, #0cc39b 0%, #08a085 100%);
+    background: linear-gradient(135deg, #00ffff 0%, #007bff 100%);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -408,7 +426,7 @@
   .contact-icon svg {
     width: 18px;
     height: 18px;
-    stroke: #2a0878;
+    stroke: #1a1a2e;
     stroke-width: 2;
   }
 
@@ -430,27 +448,28 @@
     align-items: center;
     gap: 1rem;
     padding: 0.8rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     font-weight: 500;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
 
   .social-link:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(12, 195, 155, 0.3);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(0, 255, 255, 0.3);
     transform: translateY(-2px);
-    color: #0cc39b;
+    color: #00ffff;
   }
 
   .social-icon {
     width: 35px;
     height: 35px;
-    background: linear-gradient(135deg, #0cc39b 0%, #08a085 100%);
+    background: linear-gradient(135deg, #00ffff 0%, #007bff 100%);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -459,7 +478,7 @@
   }
 
   .social-icon i {
-    color: #2a0878;
+    color: #1a1a2e;
     font-size: 18px;
     font-weight: bold;
   }
@@ -499,7 +518,7 @@
   .heart-icon {
     width: 16px;
     height: 16px;
-    color: #0cc39b;
+    color: #00ffff;
     animation: heartbeat 2s ease-in-out infinite;
   }
 }
@@ -528,7 +547,7 @@
     right: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #0cc39b 0%, #08a085 100%);
+    background: linear-gradient(135deg, #00ffff 0%, #007bff 100%);
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   }
 
@@ -556,7 +575,7 @@
   }
 
   .left p:hover {
-    color: #0cc39b;
+    color: #00ffff;
   }
 
   /* Address Styles Mobile */
@@ -569,19 +588,19 @@
   .address-icon {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #0cc39b 0%, #08a085 100%);
+    background: linear-gradient(135deg, #00ffff 0%, #007bff 100%);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(12, 195, 155, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
   }
 
   .address-icon svg {
     width: 20px;
     height: 20px;
-    stroke: #2a0878;
+    stroke: #1a1a2e;
     stroke-width: 2;
   }
 
@@ -603,16 +622,17 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
 
   .contact-icon {
     width: 35px;
     height: 35px;
-    background: linear-gradient(135deg, #0cc39b 0%, #08a085 100%);
+    background: linear-gradient(135deg, #00ffff 0%, #007bff 100%);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -623,7 +643,7 @@
   .contact-icon svg {
     width: 18px;
     height: 18px;
-    stroke: #2a0878;
+    stroke: #1a1a2e;
     stroke-width: 2;
   }
 
@@ -645,20 +665,21 @@
     align-items: center;
     gap: 0.8rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     font-weight: 500;
     font-size: 0.9rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
 
   .social-icon {
     width: 30px;
     height: 30px;
-    background: linear-gradient(135deg, #0cc39b 0%, #08a085 100%);
+    background: linear-gradient(135deg, #00ffff 0%, #007bff 100%);
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -667,7 +688,7 @@
   }
 
   .social-icon i {
-    color: #2a0878;
+    color: #1a1a2e;
     font-size: 16px;
     font-weight: bold;
   }
@@ -707,7 +728,7 @@
   .heart-icon {
     width: 16px;
     height: 16px;
-    color: #0cc39b;
+    color: #00ffff;
     animation: heartbeat 2s ease-in-out infinite;
   }
 }

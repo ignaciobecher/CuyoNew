@@ -171,7 +171,7 @@ export default {
 /* Technologies Container */
 .technologies-container {
   position: relative;
-  background: linear-gradient(135deg, #0cc39b 0%, #08a085 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   min-height: 100vh;
   overflow: hidden;
   padding: 6rem 0;
@@ -185,9 +185,9 @@ export default {
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 20% 30%, rgba(42, 8, 120, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(42, 8, 120, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 50%);
+    radial-gradient(circle at 25% 25%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 123, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -201,7 +201,7 @@ export default {
   background-image: 
     linear-gradient(45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%),
     linear-gradient(-45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%);
-  background-size: 100px 100px;
+  background-size: 40px 40px;
 }
 
 /* Content Wrapper */
@@ -221,15 +221,16 @@ export default {
 
 .section-badge {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background: rgba(42, 8, 120, 0.15);
-  color: #2a0878;
+  padding: 0.8rem 1.5rem;
+  background: rgba(0, 255, 255, 0.1);
+  color: #00ffff;
   border-radius: 50px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  margin-bottom: 2rem;
-  border: 1px solid rgba(42, 8, 120, 0.3);
-  backdrop-filter: blur(10px);
+  margin-bottom: 2.5rem;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
   animation: fadeInUp 0.8s ease-out;
 }
 
@@ -242,20 +243,23 @@ export default {
   display: block;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 800;
-  color: #2a0878;
+  color: #ffffff;
   opacity: 0;
   animation: fadeInUp 0.8s ease-out forwards;
   margin-bottom: 0.2rem;
 }
 
 .title-line.highlight {
-  color: #ffffff;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(135deg, #00ffff 0%, #007bff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
 }
 
 .subtitle {
   font-size: 1.3rem;
-  color: #2a0878;
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
@@ -273,9 +277,10 @@ export default {
 
 .tech-card {
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
   padding: 2rem;
   text-align: center;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -283,6 +288,7 @@ export default {
   overflow: hidden;
   opacity: 0;
   transform: translateY(30px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .tech-card.animate-in {
@@ -291,10 +297,10 @@ export default {
 }
 
 .tech-card:hover {
-  transform: translateY(-15px) scale(1.05);
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(42, 8, 120, 0.3);
-  box-shadow: 0 25px 70px rgba(42, 8, 120, 0.2);
+  transform: translateY(-8px) translateX(-4px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 255, 255, 0.15);
 }
 
 .tech-icon-wrapper {
@@ -387,7 +393,7 @@ export default {
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(12, 195, 155, 0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, transparent 70%);
   border-radius: 50%;
   opacity: 0;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -406,19 +412,19 @@ export default {
 .tech-name {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #2a0878;
+  color: #ffffff;
   margin-bottom: 0.5rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tech-card:hover .tech-name {
-  color: #1a0550;
+  color: #00ffff;
   transform: translateY(-2px);
 }
 
 .tech-category {
   font-size: 0.9rem;
-  color: rgba(42, 8, 120, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -426,7 +432,7 @@ export default {
 }
 
 .tech-card:hover .tech-category {
-  color: #0cc39b;
+  color: #007bff;
   font-weight: 600;
 }
 
@@ -436,10 +442,10 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(12, 195, 155, 0.05) 0%, rgba(8, 160, 133, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 123, 255, 0.1) 100%);
   opacity: 0;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
 .tech-card:hover .tech-overlay {
@@ -449,23 +455,24 @@ export default {
 /* CTA Section */
 .cta-section {
   text-align: center;
-  padding: 4rem 2rem;
-  background: rgba(42, 8, 120, 0.1);
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px);
-  border-radius: 24px;
-  border: 1px solid rgba(42, 8, 120, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .cta-title {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
-  color: #2a0878;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .cta-description {
   font-size: 1.2rem;
-  color: #2a0878;
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 3rem;
   max-width: 600px;
   margin-left: auto;
@@ -474,27 +481,28 @@ export default {
 }
 
 .cta-button {
-  padding: 1.2rem 3rem;
+  padding: 1.2rem 2rem;
   border: none;
-  border-radius: 15px;
+  border-radius: 12px;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   cursor: pointer;
-  background: linear-gradient(135deg, #2a0878 0%, #1a0550 100%);
-  color: #ffffff;
-  box-shadow: 0 10px 40px rgba(42, 8, 120, 0.3);
+  background: linear-gradient(135deg, #00ffff 0%, #007bff 100%);
+  color: #1a1a2e;
+  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.25);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  min-width: 180px;
+  justify-content: center;
 }
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 50px rgba(42, 8, 120, 0.4);
-  background: linear-gradient(135deg, #1a0550 0%, #2a0878 100%);
+  box-shadow: 0 12px 40px rgba(0, 255, 255, 0.35);
 }
 
 .button-link {

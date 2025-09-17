@@ -256,18 +256,36 @@ export default {
   z-index: 1000;
 }
 
+.navbar-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 123, 255, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
 /* Main Navbar */
 .navbar {
-  background: rgba(4, 5, 5, 0.95);
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(22, 33, 62, 0.95) 50%, rgba(15, 52, 96, 0.95) 100%);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(18, 159, 149, 0.1);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar.scrolled {
-  background: rgba(4, 5, 5, 0.98);
-  border-bottom: 1px solid rgba(18, 159, 149, 0.2);
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.98) 0%, rgba(22, 33, 62, 0.98) 50%, rgba(15, 52, 96, 0.98) 100%);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -292,7 +310,7 @@ export default {
   width: 48px;
   height: 48px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(18, 159, 149, 0.3));
+  filter: drop-shadow(0 2px 8px rgba(0, 255, 255, 0.3));
   transition: transform 0.3s ease;
 }
 
@@ -316,7 +334,7 @@ export default {
 .brand-tagline {
   font-size: 11px;
   font-weight: 500;
-  color: #129f95;
+  color: #00ffff;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -350,26 +368,26 @@ export default {
 
 .nav-link:hover {
   color: #ffffff;
-  background: rgba(18, 159, 149, 0.1);
+  background: rgba(0, 255, 255, 0.1);
   transform: translateY(-1px);
 }
 
 .nav-link.active {
-  color: #129f95;
-  background: rgba(18, 159, 149, 0.15);
+  color: #00ffff;
+  background: rgba(0, 255, 255, 0.15);
 }
 
 .nav-link.contact-link {
-  background: linear-gradient(135deg, #129f95, #0d7a72);
-  color: #ffffff;
+  background: linear-gradient(135deg, #00ffff, #007bff);
+  color: #1a1a2e;
   font-weight: 600;
   margin-left: 12px;
 }
 
 .nav-link.contact-link:hover {
-  background: linear-gradient(135deg, #0d7a72, #129f95);
+  background: linear-gradient(135deg, #007bff, #00ffff);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(18, 159, 149, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.4);
 }
 
 .nav-icon {
@@ -462,7 +480,7 @@ export default {
 }
 
 .mobile-toggle:hover {
-  background: rgba(18, 159, 149, 0.1);
+  background: rgba(0, 255, 255, 0.1);
 }
 
 .hamburger-line {
@@ -511,12 +529,12 @@ export default {
   right: 0;
   width: min(400px, 90vw);
   height: 100vh;
-  background: linear-gradient(180deg, #040505 0%, #0a0b0b 100%);
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   transform: translateX(100%);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  border-left: 1px solid rgba(18, 159, 149, 0.2);
+  border-left: 1px solid rgba(0, 255, 255, 0.2);
 }
 
 .mobile-nav-overlay.active .mobile-nav {
@@ -528,7 +546,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 24px;
-  border-bottom: 1px solid rgba(18, 159, 149, 0.1);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
 }
 
 .mobile-logo {
@@ -564,8 +582,8 @@ export default {
 }
 
 .close-btn:hover {
-  background: rgba(18, 159, 149, 0.1);
-  color: #129f95;
+  background: rgba(0, 255, 255, 0.1);
+  color: #00ffff;
 }
 
 .mobile-nav-menu {
@@ -594,27 +612,27 @@ export default {
 
 .mobile-nav-link:hover {
   color: #ffffff;
-  background: rgba(18, 159, 149, 0.1);
-  border-left-color: #129f95;
+  background: rgba(0, 255, 255, 0.1);
+  border-left-color: #00ffff;
 }
 
 .mobile-nav-link.router-link-active {
-  color: #129f95;
-  background: rgba(18, 159, 149, 0.15);
-  border-left-color: #129f95;
+  color: #00ffff;
+  background: rgba(0, 255, 255, 0.15);
+  border-left-color: #00ffff;
 }
 
 .mobile-nav-link.contact {
   margin: 16px 24px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #129f95, #0d7a72);
-  color: #ffffff;
+  background: linear-gradient(135deg, #00ffff, #007bff);
+  color: #1a1a2e;
   border-left: none;
   font-weight: 600;
 }
 
 .mobile-nav-link.contact:hover {
-  background: linear-gradient(135deg, #0d7a72, #129f95);
+  background: linear-gradient(135deg, #007bff, #00ffff);
   transform: translateX(4px);
 }
 
@@ -626,7 +644,7 @@ export default {
 
 .mobile-nav-footer {
   padding: 24px;
-  border-top: 1px solid rgba(18, 159, 149, 0.1);
+  border-top: 1px solid rgba(0, 255, 255, 0.1);
 }
 
 .mobile-social-links {
@@ -651,9 +669,9 @@ export default {
 }
 
 .mobile-social-link:hover {
-  color: #129f95;
-  border-color: #129f95;
-  background: rgba(18, 159, 149, 0.1);
+  color: #00ffff;
+  border-color: #00ffff;
+  background: rgba(0, 255, 255, 0.1);
 }
 
 .mobile-flag {
@@ -749,7 +767,7 @@ export default {
 .mobile-nav-link:focus,
 .social-link:focus,
 .mobile-social-link:focus {
-  outline: 2px solid #129f95;
+  outline: 2px solid #00ffff;
   outline-offset: 2px;
 }
 

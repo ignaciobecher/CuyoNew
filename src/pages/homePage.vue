@@ -6,7 +6,6 @@
         <associatesComponent></associatesComponent>
         <servicesComponent></servicesComponent>
         <adminiaComponent></adminiaComponent>
-        <worksComponent></worksComponent>
         <techsComponent></techsComponent>
         <footerComponent></footerComponent>
     </div>
@@ -20,7 +19,6 @@ import associatesComponent from '@/components/associatesComponent.vue'
 import aboutComponent  from '@/components/aboutComponent.vue'
 import servicesComponent from '@/components/servicesComponent.vue';
 import adminiaComponent from '@/components/adminiaComponent.vue';
-import worksComponent from '@/components/worksComponent.vue';
 import techsComponent from '@/components/techsComponent.vue';
 import footerComponent from '@/components/footerComponent.vue';
 
@@ -32,7 +30,6 @@ export default {
         aboutComponent,
         servicesComponent,
         adminiaComponent,
-        worksComponent,
         techsComponent,
         footerComponent
     }
