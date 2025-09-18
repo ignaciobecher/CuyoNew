@@ -41,6 +41,13 @@
               <span>Sistemas</span>
             </router-link>
           </li>
+
+            <li class="nav-item">
+            <router-link class="nav-link" to="/cursos" active-class="active">
+              <i class="nav-icon bi bi-book-fill"></i>
+              <span>Cursos</span>
+            </router-link>
+          </li>
           <li class="nav-item">
             <a
               class="nav-link contact-link"
