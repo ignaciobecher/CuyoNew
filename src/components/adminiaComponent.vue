@@ -65,7 +65,7 @@
 
             <div class="product-stats">
               <div class="stat">
-                <span class="stat-number">30+</span>
+                <span class="stat-number">90+</span>
                 <span class="stat-label">Negocios</span>
               </div>
               <div class="stat">
@@ -103,7 +103,7 @@
               </div>
               <div class="product-info">
                 <h3 class="product-name">Trainify</h3>
-                <span class="product-category">Plataforma LMS</span>
+                <span class="product-category">Gestión de gimnasios y turnos</span>
               </div>
               <div class="product-badge">
                 <span>Premium</span>
@@ -111,14 +111,18 @@
             </div>
 
             <p class="product-description">
-              Sistema de gestión de aprendizaje empresarial que potencia el
-              desarrollo del talento humano con metodologías innovadoras.
+              Plataforma todo en uno para gimnasios que optimiza la gestión de
+              miembros, reservas y entrenamientos personalizados.
             </p>
 
             <div class="features-list">
               <div class="feature-item">
-                <div class="feature-icon">🎓</div>
-                <span>Cursos interactivos</span>
+                <div class="feature-icon">
+                  🏋️
+                </div>
+                <span>
+                  Gestión de miembros
+                </span>
               </div>
               <div class="feature-item">
                 <div class="feature-icon">📈</div>
@@ -126,7 +130,9 @@
               </div>
               <div class="feature-item">
                 <div class="feature-icon">🏆</div>
-                <span>Certificaciones</span>
+                <span>
+                  Programas de entrenamiento
+                </span>
               </div>
               <div class="feature-item">
                 <div class="feature-icon">🧠</div>
@@ -136,8 +142,8 @@
 
             <div class="product-stats">
               <div class="stat">
-                <span class="stat-number">10+</span>
-                <span class="stat-label">Usuarios</span>
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Gimnasios</span>
               </div>
               <div class="stat">
                 <span class="stat-number">95%</span>
@@ -202,7 +208,7 @@
 
             <div class="product-stats">
               <div class="stat">
-                <span class="stat-number">10+</span>
+                <span class="stat-number">50+</span>
                 <span class="stat-label">Restaurantes</span>
               </div>
               <div class="stat">
