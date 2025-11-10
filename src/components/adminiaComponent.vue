@@ -32,34 +32,29 @@
               </div>
               <div class="product-info">
                 <h3 class="product-name">Distrify</h3>
-                <span class="product-category">Sistema de Distribución</span>
-              </div>
-              <div class="product-badge">
-                <span>Enterprise</span>
+                <span class="product-category"
+                  >Sistema de gestión de negocios</span
+                >
               </div>
             </div>
 
             <p class="product-description">
-              Plataforma integral que revoluciona la gestión comercial y
-              distribución con tecnología de punta e inteligencia artificial.
+              Sistema de gestión integral para comercios que centraliza ventas,
+              inventarios y clientes en una plataforma fácil de usar.
             </p>
 
             <div class="features-list">
               <div class="feature-item">
-                <div class="feature-icon">📊</div>
                 <span>Analytics en tiempo real</span>
               </div>
               <div class="feature-item">
-                <div class="feature-icon">🤝</div>
-                <span>CRM avanzado</span>
+                <span>CRM </span>
               </div>
               <div class="feature-item">
-                <div class="feature-icon">📦</div>
                 <span>Gestión de inventarios</span>
               </div>
               <div class="feature-item">
-                <div class="feature-icon">🏢</div>
-                <span>Multi-sucursal</span>
+                <span>Multi-usuario</span>
               </div>
             </div>
 
@@ -93,20 +88,20 @@
           data-aos-delay="200"
         >
           <div class="card-glow"></div>
-          <div class="featured-label">Más Popular</div>
           <div class="card-content">
             <div class="product-header">
               <div class="product-icon">
-                <div class="logo-placeholder">
-                  <span>T</span>
-                </div>
+                <img
+                  src="../assets/trainify.png"
+                  alt="Distrify"
+                  class="product-logo"
+                />
               </div>
               <div class="product-info">
                 <h3 class="product-name">Trainify</h3>
-                <span class="product-category">Gestión de gimnasios y turnos</span>
-              </div>
-              <div class="product-badge">
-                <span>Premium</span>
+                <span class="product-category"
+                  >Gestión de gimnasios y turnos</span
+                >
               </div>
             </div>
 
@@ -117,26 +112,16 @@
 
             <div class="features-list">
               <div class="feature-item">
-                <div class="feature-icon">
-                  🏋️
-                </div>
-                <span>
-                  Gestión de miembros
-                </span>
+                <span> Gestión de miembros </span>
               </div>
               <div class="feature-item">
-                <div class="feature-icon">📈</div>
                 <span>Seguimiento avanzado</span>
               </div>
               <div class="feature-item">
-                <div class="feature-icon">🏆</div>
-                <span>
-                  Programas de entrenamiento
-                </span>
+                <span> Programas de entrenamiento </span>
               </div>
               <div class="feature-item">
-                <div class="feature-icon">🧠</div>
-                <span>IA personalizada</span>
+                <span>IA integrada</span>
               </div>
             </div>
 
@@ -168,40 +153,35 @@
           <div class="card-glow"></div>
           <div class="card-content">
             <div class="product-header">
-              <div class="product-icon">
-                <div class="logo-placeholder foodify">
-                  <span>F</span>
-                </div>
+           <div class="product-icon">
+                <img
+                  src="../assets/foodify.png"
+                  alt="Distrify"
+                  class="product-logo"
+                />
               </div>
               <div class="product-info">
                 <h3 class="product-name">Foodify</h3>
                 <span class="product-category">Sistema Gastronómico</span>
               </div>
-              <div class="product-badge">
-                <span>Profesional</span>
-              </div>
             </div>
 
             <p class="product-description">
-              Solución completa para el sector gastronómico que digitaliza
-              operaciones desde la cocina hasta la experiencia del cliente.
+              Solución gastronómica que facilita la gestión de pedidos mediante
+              IA para agilizar operaciones y mejorar la experiencia del cliente.
             </p>
 
             <div class="features-list">
               <div class="feature-item">
-                <div class="feature-icon">💳</div>
                 <span>POS integrado</span>
               </div>
               <div class="feature-item">
-                <div class="feature-icon">🍽️</div>
                 <span>Gestión de mesas</span>
               </div>
               <div class="feature-item">
-                <div class="feature-icon">📱</div>
                 <span>App móvil</span>
               </div>
               <div class="feature-item">
-                <div class="feature-icon">🚚</div>
                 <span>Delivery tracking</span>
               </div>
             </div>
@@ -209,11 +189,7 @@
             <div class="product-stats">
               <div class="stat">
                 <span class="stat-number">50+</span>
-                <span class="stat-label">Restaurantes</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">10.000+</span>
-                <span class="stat-label">Pedidos</span>
+                <span class="stat-label">Pre-preinscriptos</span>
               </div>
             </div>
 
@@ -222,7 +198,7 @@
                 onclick="window.open('https://foodify.com.ar', '_blank')"
                 class="btn btn-primary"
               >
-                <span>Unirse a Foodify</span>
+                <span>Inscribirse a Foodify</span>
                 <div class="btn-glow"></div>
               </button>
             </div>
@@ -300,7 +276,6 @@
           </div>
 
           <div class="cta-trust">
-         
             <div class="trust-item">
               <span class="trust-icon">✓</span>
               <span>Sin compromiso</span>

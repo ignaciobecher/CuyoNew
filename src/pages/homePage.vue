@@ -1,11 +1,12 @@
 <template>
     <div>
         <navbarComponent></navbarComponent>
+        <adminiaComponent></adminiaComponent>
+
         <headerComponent></headerComponent>
         <aboutComponent></aboutComponent>
         <associatesComponent></associatesComponent>
         <servicesComponent></servicesComponent>
-        <adminiaComponent></adminiaComponent>
         <techsComponent></techsComponent>
         <footerComponent></footerComponent>
     </div>

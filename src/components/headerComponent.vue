@@ -22,7 +22,7 @@
         </p>
         <div class="hero-actions">
           <button class="cta-button primary">
-            <a href="#productos" class="button-link">
+            <a href="http://cuyocode.com.ar/sistemas" class="button-link">
               <svg
                 class="icon"
                 viewBox="0 0 24 24"
