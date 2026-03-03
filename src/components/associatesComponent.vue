@@ -2,22 +2,20 @@
   <div class="associates-container">
     <!-- Background Pattern -->
     <div class="background-pattern"></div>
-    
+
     <!-- Content Wrapper -->
     <div class="content-wrapper">
       <!-- Header Section -->
       <div class="header-section">
-        <div class="section-badge">
-          <span>🤝 Nuestros Socios</span>
-        </div>
-        
+
+
         <h1 class="main-title">
           <span class="title-line">Empresas que</span>
           <span class="title-line highlight">confían en nosotros</span>
         </h1>
-        
+
         <p class="subtitle">
-          Trabajamos junto a socios estratégicos para expandir el alcance de nuestras soluciones 
+          Trabajamos junto a socios estratégicos para expandir el alcance de nuestras soluciones
           SaaS y crear un ecosistema de colaboración que impulse el crecimiento mutuo.
         </p>
       </div>
@@ -29,7 +27,7 @@
             <div class="associate-content">
               <img src="../assets/laPedrera.png" alt="La Pedrera - Socio estratégico" class="associate-logo" />
               <div class="associate-overlay">
-            
+
               </div>
             </div>
             <div class="associate-glow"></div>
@@ -41,7 +39,7 @@
             <div class="associate-content">
               <img src="../assets/nuevoSol.png" alt="Nuevo Sol - Socio estratégico" class="associate-logo" />
               <div class="associate-overlay">
-          
+
               </div>
             </div>
             <div class="associate-glow"></div>
@@ -54,8 +52,8 @@
               <div class="coming-soon-content">
                 <div class="coming-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <circle cx="12" cy="12" r="10"/>
-                    <polyline points="12,6 12,12 16,14"/>
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12,6 12,12 16,14" />
                   </svg>
                 </div>
                 <h3>Tu empresa</h3>
@@ -81,32 +79,32 @@
           <div class="benefit-item">
             <div class="benefit-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
               </svg>
             </div>
             <h3>Colaboración Estratégica</h3>
             <p>Unimos fuerzas para crear soluciones innovadoras que amplían las oportunidades de negocio</p>
           </div>
-          
+
           <div class="benefit-item">
             <div class="benefit-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5"/>
-                <path d="M2 12l10 5 10-5"/>
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
               </svg>
             </div>
             <h3>Tecnología de Vanguardia</h3>
             <p>Acceso a nuestra suite SaaS y herramientas tecnológicas para potenciar tu propuesta de valor</p>
           </div>
-          
+
           <div class="benefit-item">
             <div class="benefit-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
               </svg>
             </div>
             <h3>Crecimiento Exponencial</h3>
@@ -120,19 +118,20 @@
         <div class="cta-content">
           <h2 class="cta-title">¿Listo para ser nuestro próximo socio estratégico?</h2>
           <p class="cta-description">
-            Únete a nuestro ecosistema de colaboración y multipliquemos juntos el impacto 
+            Únete a nuestro ecosistema de colaboración y multipliquemos juntos el impacto
             de la tecnología en los negocios.
           </p>
           <div class="cta-actions">
             <button class="cta-button primary">
               <a href="https://wa.link/jajbyw" target="_blank" class="button-link">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
                 </svg>
                 CONVERSAR SOBRE ALIANZAS
               </a>
             </button>
-       
+
           </div>
         </div>
       </div>
@@ -155,7 +154,7 @@ export default {
             entry.target.classList.add('animate-in');
           }
         });
-      }, { 
+      }, {
         threshold: 0.2,
         rootMargin: '0px 0px -50px 0px'
       });
@@ -193,12 +192,12 @@ export default {
 
     addHoverEffects() {
       const associateCards = document.querySelectorAll('.associate-card');
-      
+
       associateCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
           card.style.transform = 'translateY(-15px) scale(1.02)';
         });
-        
+
         card.addEventListener('mouseleave', () => {
           card.style.transform = 'translateY(0) scale(1)';
         });
@@ -232,7 +231,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
+  background-image:
     radial-gradient(circle at 25% 25%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 75% 75%, rgba(0, 123, 255, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
@@ -246,7 +245,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
+  background-image:
     linear-gradient(45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%),
     linear-gradient(-45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%);
   background-size: 40px 40px;
@@ -757,6 +756,7 @@ export default {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -764,9 +764,12 @@ export default {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -777,7 +780,7 @@ export default {
   .content-wrapper {
     padding: 0 1.5rem;
   }
-  
+
   .associates-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
@@ -788,48 +791,48 @@ export default {
   .associates-container {
     padding: 4rem 0;
   }
-  
+
   .content-wrapper {
     padding: 0 1rem;
   }
-  
+
   .header-section {
     margin-bottom: 4rem;
   }
-  
+
   .associates-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 4rem;
   }
-  
+
   .associate-logo-wrapper {
     padding: 2rem 1.5rem;
   }
-  
+
   .associate-logo {
     max-width: 150px;
     max-height: 100px;
   }
-  
+
   .benefits-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .benefit-item {
     padding: 2rem 1.5rem;
   }
-  
+
   .cta-section {
     padding: 3rem 1.5rem;
   }
-  
+
   .cta-actions {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .cta-button {
     width: 100%;
     max-width: 300px;
@@ -840,39 +843,39 @@ export default {
   .associates-container {
     padding: 3rem 0;
   }
-  
+
   .section-badge {
     font-size: 0.85rem;
     padding: 0.6rem 1.2rem;
   }
-  
+
   .associate-logo-wrapper {
     padding: 1.5rem 1rem;
   }
-  
+
   .associate-logo {
     max-width: 120px;
     max-height: 80px;
   }
-  
+
   .benefit-item {
     padding: 1.5rem 1rem;
   }
-  
+
   .benefit-icon {
     width: 60px;
     height: 60px;
   }
-  
+
   .benefit-icon svg {
     width: 28px;
     height: 28px;
   }
-  
+
   .cta-section {
     padding: 2.5rem 1rem;
   }
-  
+
   .cta-button {
     font-size: 0.9rem;
     padding: 1rem 2rem;
@@ -884,7 +887,7 @@ export default {
   .background-pattern {
     opacity: 0.3;
   }
-  
+
   .associate-logo-wrapper,
   .benefit-item,
   .cta-section {

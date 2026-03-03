@@ -2,23 +2,21 @@
   <div class="services-container">
     <!-- Background Pattern -->
     <div class="background-pattern"></div>
-    
+
     <!-- Content Wrapper -->
     <div class="content-wrapper">
       <!-- Header Section -->
       <div class="header-section">
-        <div class="section-badge">
-          <span>💡 Nuestros Servicios</span>
-        </div>
-        
+
+
         <h1 class="main-title">
           <span class="title-line">Hacemos realidad</span>
           <span class="title-line highlight">tus ideas</span>
           <span class="title-line subtitle">solucionamos tus problemas</span>
         </h1>
-        
+
         <p class="description">
-          Transformamos conceptos en soluciones tecnológicas que impulsan el crecimiento de tu empresa. 
+          Transformamos conceptos en soluciones tecnológicas que impulsan el crecimiento de tu empresa.
           Desde apps móviles hasta sistemas complejos, tenemos la experiencia para llevarte al siguiente nivel.
         </p>
       </div>
@@ -34,7 +32,7 @@
       <!-- Services Grid -->
       <div class="services-grid">
         <div class="service-card" v-for="(service, index) in services" :key="index">
-     
+
           <div class="service-content">
             <h3 class="service-title">{{ service.title }}</h3>
             <p class="service-description">{{ service.description }}</p>
@@ -50,46 +48,48 @@
           <p class="cta-description">
             Conversemos sobre tu proyecto y descubre cómo podemos ayudarte a alcanzar tus objetivos.
           </p>
-          
+
           <div class="cta-actions">
             <button class="cta-button primary">
               <a href="https://wa.link/jajbyw" target="_blank" class="button-link">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
                 </svg>
                 AGENDAR LLAMADA GRATUITA
               </a>
             </button>
-            
+
             <button class="cta-button secondary">
               <a href="#contacto" class="button-link">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
                 </svg>
                 ENVIAR PROPUESTA
               </a>
             </button>
           </div>
-          
+
           <div class="cta-features">
             <div class="feature">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M9 12l2 2 4-4"/>
-                <circle cx="12" cy="12" r="10"/>
+                <path d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="10" />
               </svg>
               <span>Consulta 100% gratuita</span>
             </div>
             <div class="feature">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12,6 12,12 16,14"/>
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12,6 12,12 16,14" />
               </svg>
               <span>Respuesta en menos de 24h</span>
             </div>
             <div class="feature">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
               </svg>
               <span>3+ años de experiencia</span>
             </div>
@@ -215,12 +215,12 @@ export default {
 
     addHoverEffects() {
       const serviceCards = document.querySelectorAll('.service-card');
-      
+
       serviceCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
           card.style.transform = 'translateY(-15px) scale(1.02)';
         });
-        
+
         card.addEventListener('mouseleave', () => {
           card.style.transform = 'translateY(0) scale(1)';
         });
@@ -254,7 +254,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
+  background-image:
     radial-gradient(circle at 25% 25%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 75% 75%, rgba(0, 123, 255, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
@@ -268,7 +268,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
+  background-image:
     linear-gradient(45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%),
     linear-gradient(-45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%);
   background-size: 40px 40px;
@@ -655,6 +655,7 @@ export default {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -666,12 +667,12 @@ export default {
   .content-wrapper {
     padding: 0 1.5rem;
   }
-  
+
   .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
   }
-  
+
   .logo-image {
     width: 180px;
   }
@@ -681,76 +682,76 @@ export default {
   .services-container {
     padding: 4rem 0;
   }
-  
+
   .content-wrapper {
     padding: 0 1rem;
   }
-  
+
   .header-section {
     margin-bottom: 3rem;
   }
-  
+
   .section-badge {
     font-size: 0.85rem;
     padding: 0.6rem 1.2rem;
     margin-bottom: 2rem;
   }
-  
+
   .description {
     font-size: 1.1rem;
   }
-  
+
   .logo-section {
     margin-bottom: 4rem;
   }
-  
+
   .logo-image {
     width: 150px;
   }
-  
+
   .services-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-bottom: 4rem;
   }
-  
+
   .service-card {
     padding: 2rem 1.5rem;
   }
-  
+
   .service-icon {
     width: 60px;
     height: 60px;
   }
-  
+
   .service-icon svg {
     width: 28px;
     height: 28px;
   }
-  
+
   .service-title {
     font-size: 1.2rem;
   }
-  
+
   .service-description {
     font-size: 0.95rem;
   }
-  
+
   .cta-section {
     padding: 3rem 1.5rem;
   }
-  
+
   .cta-actions {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  
+
   .cta-button {
     width: 100%;
     max-width: 300px;
   }
-  
+
   .cta-features {
     flex-direction: column;
     gap: 1.5rem;
@@ -762,63 +763,63 @@ export default {
   .services-container {
     padding: 3rem 0;
   }
-  
+
   .content-wrapper {
     padding: 0 1rem;
   }
-  
+
   .title-line {
     font-size: clamp(2.2rem, 12vw, 3.5rem);
   }
-  
+
   .title-line.subtitle {
     font-size: clamp(1.4rem, 8vw, 2rem);
   }
-  
+
   .description {
     font-size: 1rem;
   }
-  
+
   .logo-image {
     width: 120px;
   }
-  
+
   .service-card {
     padding: 1.5rem 1rem;
   }
-  
+
   .service-icon {
     width: 50px;
     height: 50px;
   }
-  
+
   .service-icon svg {
     width: 24px;
     height: 24px;
   }
-  
+
   .service-title {
     font-size: 1.1rem;
   }
-  
+
   .service-description {
     font-size: 0.9rem;
   }
-  
+
   .cta-section {
     padding: 2.5rem 1rem;
   }
-  
+
   .cta-button {
     font-size: 0.9rem;
     padding: 1rem 2rem;
     min-width: 200px;
   }
-  
+
   .feature {
     font-size: 0.9rem;
   }
-  
+
   .feature svg {
     width: 20px;
     height: 20px;
@@ -830,7 +831,7 @@ export default {
   .background-pattern {
     opacity: 0.3;
   }
-  
+
   .service-card,
   .cta-section {
     border-width: 2px;
