@@ -55,22 +55,22 @@
         </div>
       </a>
 
-      <!-- Small Bento Item 2: Foodify -->
-      <a href="https://foodify.com.ar" target="_blank" class="block md:col-span-1 md:row-span-1" data-aos="fade-up"
+      <!-- Small Bento Item 2: Autino -->
+      <a href="https://autino.click" target="_blank" class="block md:col-span-1 md:row-span-1" data-aos="fade-up"
         data-aos-delay="300">
         <div
           class="group relative overflow-hidden rounded-3xl border border-white/5 bg-slate-custom/30 hover:border-primary/30 transition-all cursor-pointer h-full">
           <div class="absolute inset-0 z-0">
-            <img alt="Foodify"
+            <img alt="Autino"
               class="w-full h-full object-cover opacity-20 group-hover:opacity-40 transition-all duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeJeZXhAd4XE8VeY1FeSs4XiedTBQRLsXUiZSyCNMrsTapcu-atOMfdq5urQda1gQL8o9g1R2mq5kxoWGG3VOGE41Ndh3_LZTmxkKxsvGpUrw36PXsiE9gsULvfU7AWAum8CyTqjUzuEEdvaazka7ws4_HepBmKvItomrtTCqsv4vQ75gADPfhd7Gw4q_lXJpYtovQcjTvko8ONH38NUPKZtA7qQnt0IbJLUz1S4nhq1-qtkR7WkEl02lJKMBQlYXtzkqSe35CYDmd" />
+              src="../../assets/autino_bg.png" />
           </div>
           <div class="relative z-10 p-8 h-full flex flex-col justify-between">
-            <div class="material-symbols-outlined text-primary text-3xl">restaurant</div>
+            <div class="material-symbols-outlined text-primary text-3xl">directions_car</div>
             <div>
-              <h3 class="text-2xl font-black text-white mb-2 tracking-tighter">Foodify</h3>
-              <p class="text-slate-400 text-sm font-light">Solución gastronómica que facilita la gestión de pedidos
-                mediante IA para agilizar operaciones.</p>
+              <h3 class="text-2xl font-black text-white mb-2 tracking-tighter">Autino</h3>
+              <p class="text-slate-400 text-sm font-light">Solución que facilita la gestión integral mediante IA para
+                agilizar operaciones.</p>
             </div>
           </div>
         </div>

@@ -24,17 +24,11 @@
           <div class="card-content">
             <div class="product-header">
               <div class="product-icon">
-                <img
-                  src="../assets/distrify.png"
-                  alt="Distrify"
-                  class="product-logo"
-                />
+                <img src="../assets/distrify.png" alt="Distrify" class="product-logo" />
               </div>
               <div class="product-info">
                 <h3 class="product-name">Distrify</h3>
-                <span class="product-category"
-                  >Sistema de gestión de negocios</span
-                >
+                <span class="product-category">Sistema de gestión de negocios</span>
               </div>
             </div>
 
@@ -70,10 +64,7 @@
             </div>
 
             <div class="product-actions">
-              <button
-                class="btn btn-primary"
-                onclick="window.open('https://distrify.com.ar', '_blank')"
-              >
+              <button class="btn btn-primary" onclick="window.open('https://distrify.com.ar', '_blank')">
                 <span>Registrate gratis</span>
                 <div class="btn-glow"></div>
               </button>
@@ -82,26 +73,16 @@
         </div>
 
         <!-- Trainify -->
-        <div
-          class="product-card featured"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <div class="product-card featured" data-aos="fade-up" data-aos-delay="200">
           <div class="card-glow"></div>
           <div class="card-content">
             <div class="product-header">
               <div class="product-icon">
-                <img
-                  src="../assets/trainify.png"
-                  alt="Distrify"
-                  class="product-logo"
-                />
+                <img src="../assets/trainify.png" alt="Distrify" class="product-logo" />
               </div>
               <div class="product-info">
                 <h3 class="product-name">Trainify</h3>
-                <span class="product-category"
-                  >Gestión de gimnasios y turnos</span
-                >
+                <span class="product-category">Gestión de gimnasios y turnos</span>
               </div>
             </div>
 
@@ -137,10 +118,7 @@
             </div>
 
             <div class="product-actions">
-              <button
-                class="btn btn-primary"
-                onclick="window.open('https://trainify.com.ar', '_blank')"
-              >
+              <button class="btn btn-primary" onclick="window.open('https://trainify.com.ar', '_blank')">
                 <span>Registrate gratis</span>
                 <div class="btn-glow"></div>
               </button>
@@ -148,26 +126,22 @@
           </div>
         </div>
 
-        <!-- Foodify -->
+        <!-- Autino -->
         <div class="product-card" data-aos="fade-up" data-aos-delay="300">
           <div class="card-glow"></div>
           <div class="card-content">
             <div class="product-header">
-           <div class="product-icon">
-                <img
-                  src="../assets/foodify.png"
-                  alt="Distrify"
-                  class="product-logo"
-                />
+              <div class="product-icon">
+                <img src="../assets/autino.png" alt="Distrify" class="product-logo" />
               </div>
               <div class="product-info">
-                <h3 class="product-name">Foodify</h3>
-                <span class="product-category">Sistema Gastronómico</span>
+                <h3 class="product-name">Autino</h3>
+                <span class="product-category">Sistema de Gestión</span>
               </div>
             </div>
 
             <p class="product-description">
-              Solución gastronómica que facilita la gestión de pedidos mediante
+              Solución que facilita la gestión mediante
               IA para agilizar operaciones y mejorar la experiencia del cliente.
             </p>
 
@@ -176,13 +150,13 @@
                 <span>POS integrado</span>
               </div>
               <div class="feature-item">
-                <span>Gestión de mesas</span>
+                <span>Gestión de turnos</span>
               </div>
               <div class="feature-item">
                 <span>App móvil</span>
               </div>
               <div class="feature-item">
-                <span>Delivery tracking</span>
+                <span>Panel inteligente</span>
               </div>
             </div>
 
@@ -194,11 +168,8 @@
             </div>
 
             <div class="product-actions">
-              <button
-                onclick="window.open('https://foodify.com.ar', '_blank')"
-                class="btn btn-primary"
-              >
-                <span>Inscribirse a Foodify</span>
+              <button onclick="window.open('https://autino.click', '_blank')" class="btn btn-primary">
+                <span>Inscribirse a Autino</span>
                 <div class="btn-glow"></div>
               </button>
             </div>
@@ -266,10 +237,7 @@
           </div>
 
           <div class="cta-actions">
-            <button
-              onclick="window.open('https://wa.link/jajbyw', '_blank')"
-              class="btn btn-primary btn-large"
-            >
+            <button onclick="window.open('https://wa.link/jajbyw', '_blank')" class="btn btn-primary btn-large">
               <span>Agendar Demo Personalizada</span>
               <div class="btn-glow"></div>
             </button>
@@ -364,21 +332,15 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: radial-gradient(
-      circle at 25% 25%,
+  background-image: radial-gradient(circle at 25% 25%,
       rgba(0, 255, 255, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 75% 75%,
+      transparent 50%),
+    radial-gradient(circle at 75% 75%,
       rgba(0, 123, 255, 0.08) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 50% 50%,
+      transparent 50%),
+    radial-gradient(circle at 50% 50%,
       rgba(255, 255, 255, 0.03) 0%,
-      transparent 70%
-    );
+      transparent 70%);
   pointer-events: none;
 }
 
@@ -389,18 +351,14 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(
-      45deg,
+  background-image: linear-gradient(45deg,
       transparent 49%,
       rgba(255, 255, 255, 0.02) 50%,
-      transparent 51%
-    ),
-    linear-gradient(
-      -45deg,
+      transparent 51%),
+    linear-gradient(-45deg,
       transparent 49%,
       rgba(255, 255, 255, 0.02) 50%,
-      transparent 51%
-    );
+      transparent 51%);
   background-size: 40px 40px;
   pointer-events: none;
 }
@@ -574,7 +532,7 @@ export default {
   box-shadow: 0 4px 20px rgba(0, 210, 211, 0.3);
 }
 
-.logo-placeholder.foodify {
+.logo-placeholder.autino {
   background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%);
   box-shadow: 0 4px 20px rgba(254, 202, 87, 0.3);
 }
@@ -727,12 +685,10 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
+  background: linear-gradient(45deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
   transform: translateX(-100%);
   transition: transform 0.5s ease;
 }
@@ -1012,6 +968,7 @@ export default {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1023,6 +980,7 @@ export default {
     opacity: 0;
     transform: translateX(30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);

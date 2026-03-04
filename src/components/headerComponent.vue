@@ -23,12 +23,7 @@
         <div class="hero-actions">
           <button class="cta-button primary">
             <a href="http://cuyocode.com.ar/sistemas" class="button-link">
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-              >
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
                 <polyline points="10,17 15,12 10,7" />
                 <line x1="15" y1="12" x2="3" y2="12" />
@@ -39,15 +34,9 @@
 
           <button class="cta-button tertiary">
             <a href="https://wa.link/jajbyw" class="button-link">
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-              >
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path
-                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
-                />
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
               </svg>
               DESARROLLO A MEDIDA
             </a>
@@ -63,7 +52,7 @@
 
         <div class="product-card card-1">
           <div class="card-content">
-          
+
             <div class="card-info">
               <h4>Distrify</h4>
               <p>Gestión integral de inventarios</p>
@@ -73,7 +62,7 @@
 
         <div class="product-card card-2">
           <div class="card-content">
-          
+
             <div class="card-info">
               <h4>Trainify</h4>
               <p>Gestión de gimnasios</p>
@@ -83,17 +72,17 @@
 
         <div class="product-card card-3">
           <div class="card-content">
-          
+
             <div class="card-info">
-              <h4>Foodify</h4>
-              <p>Gestión gastronómica</p>
+              <h4>Autino</h4>
+              <p>Gestión integral</p>
             </div>
           </div>
         </div>
 
         <div class="coming-soon-card">
           <div class="card-content">
-         
+
             <div class="card-info">
               <h4>Próximamente</h4>
               <p>Más herramientas...</p>
@@ -113,7 +102,7 @@
         <div class="stat-number">4+</div>
         <div class="stat-label">Años de Experiencia</div>
       </div>
-   
+
       <div class="stat-item">
         <div class="stat-number">24/7</div>
         <div class="stat-label">Soporte Técnico</div>
@@ -210,21 +199,15 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: radial-gradient(
-      circle at 25% 25%,
+  background-image: radial-gradient(circle at 25% 25%,
       rgba(0, 255, 255, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 75% 75%,
+      transparent 50%),
+    radial-gradient(circle at 75% 75%,
       rgba(0, 123, 255, 0.08) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 50% 50%,
+      transparent 50%),
+    radial-gradient(circle at 50% 50%,
       rgba(255, 255, 255, 0.03) 0%,
-      transparent 70%
-    );
+      transparent 70%);
   pointer-events: none;
 }
 
@@ -235,18 +218,14 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(
-      45deg,
+  background-image: linear-gradient(45deg,
       transparent 49%,
       rgba(255, 255, 255, 0.02) 50%,
-      transparent 51%
-    ),
-    linear-gradient(
-      -45deg,
+      transparent 51%),
+    linear-gradient(-45deg,
       transparent 49%,
       rgba(255, 255, 255, 0.02) 50%,
-      transparent 51%
-    );
+      transparent 51%);
   background-size: 40px 40px;
 }
 
@@ -479,7 +458,7 @@ export default {
   box-shadow: 0 4px 20px rgba(0, 210, 211, 0.3);
 }
 
-.card-icon.foodify {
+.card-icon.autino {
   background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%);
   box-shadow: 0 4px 20px rgba(254, 202, 87, 0.3);
 }
@@ -591,6 +570,7 @@ export default {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -602,6 +582,7 @@ export default {
     opacity: 0;
     transform: translateX(30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);

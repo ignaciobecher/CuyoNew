@@ -14,6 +14,7 @@
       <ValueProps />
       <Process id="metodologia" />
       <ClientsTestimonials />
+      <Contact id="contacto" />
       <Footer />
     </div>
   </div>
@@ -28,6 +29,7 @@ import DetailedServices from '../components/new/DetailedServices.vue'
 import ValueProps from '../components/new/ValueProps.vue'
 import Process from '../components/new/Process.vue'
 import ClientsTestimonials from '../components/new/ClientsTestimonials.vue'
+import Contact from '../components/new/Contact.vue'
 import Footer from '../components/new/Footer.vue'
 </script>
 

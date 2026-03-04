@@ -1,31 +1,6 @@
 <template>
     <section class="max-w-7xl mx-auto px-6 lg:px-24 py-20">
-        <!-- Hero Section -->
-        <div class="flex flex-col gap-6 md:text-left mb-16" data-aos="fade-down">
-            <span class="text-primary font-bold tracking-widest text-xs uppercase">🤝 Nuestros Socios</span>
-            <h2 class="text-4xl md:text-5xl font-black text-white leading-tight tracking-tight">
-                Empresas que confían en nosotros
-            </h2>
-            <p class="text-slate-400 text-lg max-w-2xl leading-relaxed">
-                Trabajamos junto a socios estratégicos para expandir el alcance de nuestras soluciones SaaS y crear un
-                ecosistema de colaboración que impulse el crecimiento mutuo.
-            </p>
-        </div>
 
-        <!-- Logo Cloud -->
-        <div class="border-y border-white/10 py-12 mb-24" data-aos="fade-up" data-aos-delay="100">
-            <p class="text-slate-500 text-xs font-bold uppercase tracking-widest text-center mb-10">Colaborando con
-                líderes y marcas locales</p>
-            <div
-                class="flex flex-wrap justify-center gap-16 items-center opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0">
-                <!-- Logo 1: La Pedrera -->
-                <img src="@/assets/laPedrera.png" alt="La Pedrera - Socio estratégico"
-                    class="h-16 md:h-20 object-contain drop-shadow-sm transition-all hover:scale-105" />
-                <!-- Logo 2: Nuevo Sol -->
-                <img src="@/assets/nuevoSol.png" alt="Nuevo Sol - Socio estratégico"
-                    class="h-16 md:h-20 object-contain drop-shadow-sm transition-all hover:scale-105" />
-            </div>
-        </div>
 
         <!-- Benefits (Replacing Testimonials out of lack of actual quotes) -->
         <div class="space-y-12">
