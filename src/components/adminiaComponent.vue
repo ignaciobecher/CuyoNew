@@ -132,7 +132,6 @@
           <div class="card-content">
             <div class="product-header">
               <div class="product-icon">
-                <img src="../assets/autino.png" alt="Distrify" class="product-logo" />
               </div>
               <div class="product-info">
                 <h3 class="product-name">Autino</h3>
