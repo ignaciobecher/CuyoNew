@@ -73,7 +73,7 @@
               <span class="material-symbols-outlined text-base">mail</span>
               info@cuyocode.com.ar
             </a>
-            <a href="https://wa.me/5492657201291" target="_blank"
+            <a href="https://wa.me/5493517706985" target="_blank"
               class="text-sm text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
               <span class="material-symbols-outlined text-base">call</span>
               +54 9 2657 20-1291

@@ -24,7 +24,7 @@
                     ayudarte a crear soluciones escalables y de alto impacto.</p>
 
                 <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <a href="https://wa.me/5492657201291" target="_blank"
+                    <a href="https://wa.me/5493517706985" target="_blank"
                         class="group inline-flex items-center justify-center gap-3 h-14 px-8 rounded-full bg-primary text-background-dark font-bold hover:shadow-[0_0_30px_rgba(0,208,255,0.4)] transition-all">
                         <span class="text-lg">Hablar por WhatsApp</span>
                         <span

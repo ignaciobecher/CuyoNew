@@ -169,11 +169,11 @@
                 <p class="text-slate-400 mb-8 text-lg">Convirtamos tu visión en realidad con nuestro proceso ágil
                     probado en batalla.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://wa.me/5492657201291" target="_blank"
+                    <a href="https://wa.me/5493517706985" target="_blank"
                         class="inline-flex items-center justify-center h-12 px-8 rounded-xl bg-primary text-background-dark font-bold hover:opacity-90 transition-all">
                         Agendar una Consulta Gratuita
                     </a>
-                    <a href="https://wa.me/5492657201291" target="_blank"
+                    <a href="https://wa.me/5493517706985" target="_blank"
                         class="inline-flex items-center justify-center h-12 px-8 rounded-xl border border-white/10 bg-white/5 text-white font-bold hover:bg-white/10 transition-all">
                         Ver Nuestros Proyectos
                     </a>

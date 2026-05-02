@@ -15,7 +15,7 @@
     </div>
 
     <div class="flex items-center gap-4">
-      <a href="https://wa.me/5492657201291" target="_blank"
+      <a href="https://wa.me/5493517706985" target="_blank"
         class="inline-block px-6 py-2.5 bg-primary text-background-dark text-sm font-bold rounded-full hover:shadow-[0_0_20px_rgba(0,208,255,0.4)] transition-all">
         Empezar
       </a>

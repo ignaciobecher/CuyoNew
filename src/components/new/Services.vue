@@ -20,11 +20,11 @@
                         nivel.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="https://wa.me/5492657201291" target="_blank"
+                        <a href="https://wa.me/5493517706985" target="_blank"
                             class="inline-block bg-primary text-background-dark px-8 py-3 rounded-lg font-bold flex items-center gap-2 hover:shadow-[0_0_20px_rgba(0,208,255,0.4)] transition-all">
                             Agendar Llamada <span class="material-symbols-outlined text-sm">arrow_forward</span>
                         </a>
-                        <a href="https://wa.me/5492657201291" target="_blank"
+                        <a href="https://wa.me/5493517706985" target="_blank"
                             class="inline-block border border-slate-custom hover:bg-slate-custom text-slate-100 px-8 py-3 rounded-lg font-bold transition-all">
                             Enviar Propuesta
                         </a>

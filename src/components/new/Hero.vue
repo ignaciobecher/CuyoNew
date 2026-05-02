@@ -17,7 +17,7 @@
           </p>
 
           <div class="flex flex-wrap gap-4 pt-4">
-            <a href="https://wa.me/5492657201291" target="_blank"
+            <a href="https://wa.me/5493517706985" target="_blank"
               class="group flex items-center gap-3 px-8 py-4 bg-white/5 border border-white/10 hover:border-primary/50 text-white rounded-xl transition-all">
               <span class="font-bold tracking-tight">Ver nuestro trabajo</span>
               <span

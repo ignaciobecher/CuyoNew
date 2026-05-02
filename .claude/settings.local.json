@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(curl -s http://localhost:5174)",
+      "Read(//home/ignacio/.nvm/versions/**)",
+      "Read(//usr/local/bin/**)",
+      "Read(//home/ignacio/.local/share/nvm/versions/**)",
+      "Read(//home/ignacio/**)",
+      "Bash(/home/ignacio/Documents/CuyoNew/node_modules/.bin/vite --version)"
+    ]
+  }
+}
